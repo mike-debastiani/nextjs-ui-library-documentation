@@ -15,11 +15,11 @@ export const keywords = [
   "SEO",
 ]
 export const urlimage = "/images/og-image.png"
-export const imagealt = "Rubix Studios Documentation"
+export const imagealt = "UI Component Documentation"
 export const twitterhandle = "@RubixStudios"
 
-export const companyname = "Rubix Studios"
-export const companylink = "https://rubixstudios.com.au"
+export const companyname = "Mike De Bastiani"
+export const companylink = "https://github.com/mike-debastiani"
 
 export const branding = true
 export const rightsidebar = true
