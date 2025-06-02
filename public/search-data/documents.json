@@ -107,7 +107,7 @@
     "slug": "/basic-setup/setup",
     "title": "Setup",
     "description": "Setting up and configuring your documentation project",
-    "content": "Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.\n\n## Settings\n\nThis section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.\n\n```tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\nexport const sitename = \"\"            // Title of your documentation site\n```\n\n## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.\n\n```tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false\n```\n\n## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.\n\n```tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing\n```\n\n## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.\n\n```tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to\n```\n\n## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.\n\n```tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button\n```\n\n## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.\n\n```tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub\n```\n\n## Project Structure\n",
+    "content": "Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.\n\n## Settings\n\nThis section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.\n\n```tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\nexport const sitename = \"\"            // Title of your documentation site\n```\n\n## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.\n\n```tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false\n```\n\n## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.\n\n```tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing\n```\n\n## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.\n\n```tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to\n```\n\n## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.\n\n```tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true     // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button\n```\n\n## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.\n\n```tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub\n```\n\n## Project Structure\n",
     "_searchMeta": {
       "cleanContent": "setting up your new documentation project is straightforward most of the essential project settings can be configured within the settings folder settings this section provides the core settings for your documentation site such as defining the site s url site icon and title google tags this section allows you to integrate google tag manager into your documentation project you can add your gtm code and configure whether it s connected search engine configure essential seo settings to ensure your documentation site is optimized for search engines this includes meta descriptions keywords and social media sharing details like images and alt text footer branding the footer settings allow you to customize the company information displayed at the bottom of the site you can add the company name and the url that the name will link to general layout the layout settings control the appearance and functionality of various elements of the documentation site such as branding the right sidebar feedback options table of contents and scroll-to-top functionality github control if your mdx files are hosted on github you can configure the project to load documents directly from there this option can be useful for syncing documentation updates directly with your repository project structure",
       "headings": [
@@ -143,7 +143,7 @@
         "## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.",
         "tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to",
         "## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.",
-        "tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button",
+        "tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true     // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button",
         "## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.",
         "tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub"
       ]
@@ -366,8 +366,8 @@
     }
   },
   {
-    "slug": "/navigation",
-    "title": "Navigation",
+    "slug": "/mentoring",
+    "title": "Mentoring",
     "description": "How to build our your documents menu and navigations.",
     "content": "",
     "_searchMeta": {
@@ -380,27 +380,6 @@
         "mdx",
         "nextjs",
         "documents"
-      ]
-    }
-  },
-  {
-    "slug": "/random",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nAdding some random stuff to change the code\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion adding some random stuff to change the code",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
       ]
     }
   },
@@ -479,6 +458,120 @@
         "Blockquotes",
         "Code Examples with switch",
         "Conclusion"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/inputs/checkbox",
+    "title": "Checkbox",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/inputs",
+    "title": "Inputs",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/inputs/radio-button",
+    "title": "Radio Button",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/inputs/select-dropdown",
+    "title": "Select Dropdown",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/inputs/switch-toggle",
+    "title": "Switch Toggle",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/inputs/text-input",
+    "title": "Text Inputs",
+    "description": "The TextInput component allows users to enter single-line text. It includes a label and optional placeholder text. It supports controlled input, disabled state, and styling via Tailwind CSS.",
+    "content": "import { useState } from 'react'\nimport { TextInput } from \"@/components/ui/text-input\"\n\n## Preview\n\n<TextInput id=\"username\" label=\"Username\" placeholder=\"Enter your username\" />\n\n## Code\n\n```tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInput\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;\n```\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import usestate from react import textinput from components ui text-input preview textinput id username label username placeholder enter your username code last updated: june 2025",
+      "headings": [
+        "Preview",
+        "Code"
+      ],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents",
+        "Preview",
+        "Code",
+        "tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInput\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;"
       ]
     }
   }
