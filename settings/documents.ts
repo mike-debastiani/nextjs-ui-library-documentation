@@ -3,6 +3,84 @@ import { Paths } from "@/lib/pageroutes"
 export const Documents: Paths[] = [
   {
     heading: "Introduction",
+    title: "Mentoring",
+    href: "/mentoring",
+  },
+  {
+    title: "Concept",
+    href: "/mentoring",
+  },
+  {
+    spacer: true,
+  },
+  {
+    heading: "UI Components",
+    title: "Inputs",
+    href: "/ui-components/inputs",
+    items: [
+      {
+        title: "Text Input",
+        href: "/text-input",
+      },
+      {
+        title: "Checkbox",
+        href: "/checkbox",
+      },
+      {
+        title: "Radio Button",
+        href: "/radio-button",
+      },
+      {
+        title: "Select Dropdown",
+        href: "/select-dropdown",
+      },
+      {
+        title: "Switch Toggle",
+        href: "/switch-toggle",
+      },
+    ],
+  },
+  {
+    title: "Buttons",
+    href: "/ui-components/buttons",
+    items: [
+      {
+        title: "Primary Button",
+        href: "/primary-button",
+      },
+      {
+        title: "Secondary Button",
+        href: "/secondary-button",
+      },
+      {
+        title: "Icon Button",
+        href: "/icon-button",
+      },
+    ],
+  },
+  {
+    title: "Feedback",
+    href: "/ui-components/feedback",
+    items: [
+      {
+        title: "Alerts",
+        href: "/alerts",
+      },
+      {
+        title: "Tooltips",
+        href: "/tooltips",
+      },
+      {
+        title: "Badges",
+        href: "/badges",
+      },
+    ],
+  },
+  {
+    spacer: true,
+  },
+  {
+    heading: "Documentation",
     title: "Basic Setup",
     href: "/basic-setup",
     items: [
@@ -21,42 +99,8 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    spacer: true,
-  },
-  {
-    title: "Navigation",
-    href: "/navigation",
-    heading: "Documents",
-  },
-  {
-    title: "Structure",
-    href: "/structure",
-    items: [
-      {
-        title: "Deep",
-        href: "/deep",
-        items: [
-          {
-            title: "Deeper",
-            href: "/deeper",
-            items: [
-              {
-                title: "Even deeper",
-                href: "/even-deeper",
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    spacer: true,
-  },
-  {
-    title: "Markdown",
+    title: "Markdown Components",
     href: "/markdown",
-    heading: "Components",
     items: [
       {
         title: "Cards",
@@ -96,4 +140,26 @@ export const Documents: Paths[] = [
       },
     ],
   },
+  {
+     title: "Structure",
+     href: "/structure",
+     items: [
+       {
+         title: "Deep",
+         href: "/deep",
+         items: [
+           {
+             title: "Deeper",
+             href: "/deeper",
+             items: [
+               {
+                 title: "Even deeper",
+                 href: "/even-deeper",
+               },
+             ],
+           },
+         ],
+       },
+     ],
+   },
 ]

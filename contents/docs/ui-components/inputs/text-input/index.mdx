@@ -1,0 +1,36 @@
+---
+title: Text Inputs
+description: The TextInput component allows users to enter single-line text. It includes a label and optional placeholder text. It supports controlled input, disabled state, and styling via Tailwind CSS.
+keywords: ["navigation", "sidebar", "menus", "mdx", "nextjs", "documents"]
+---
+import { useState } from 'react'
+import { TextInput } from "@/components/ui/text-input"
+
+## Preview
+<TextInput
+  id="username"
+  label="Username"
+  placeholder="Enter your username"
+/>
+
+
+## Code
+
+```tsx live
+function Example() {
+  const [value, setValue] = useState("");
+
+  return (
+    <TextInput
+      id="example"
+      label="Your name"
+      placeholder="Enter your name"
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
+}
+
+export default Example;
+```
+_Last updated: June 2025_

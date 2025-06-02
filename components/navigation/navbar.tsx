@@ -18,7 +18,8 @@ export function Navbar() {
           <SheetLeft />
           <div className="flex items-center gap-6">
             <div className="hidden md:flex">
-              <Logo />
+              {/*<Logo />*/}
+              <h1 className="text-l font-semibold">next.js ui library</h1>
             </div>
             <div className="text-muted-foreground hidden items-center gap-5 text-sm font-medium md:flex">
               <NavMenu />

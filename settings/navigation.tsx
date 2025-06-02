@@ -4,12 +4,13 @@ export const Navigations = [
   {
     title: "Docs",
     href: `/docs${PageRoutes[0].href}`,
+    external: false,
   },
-  {
-    title: "Rubix Studios Link",
-    href: "https://rubixstudios.com.au",
-    external: true,
-  },
+  // {
+  //   title: "Rubix Studios Link",
+  //   href: "https://rubixstudios.com.au",
+  //   external: true,
+  // },
 ]
 
 export const GitHubLink = {
