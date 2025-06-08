@@ -555,12 +555,12 @@
     "slug": "/ui-components/inputs/text-input",
     "title": "Text Inputs",
     "description": "The TextInput component allows users to enter single-line text. It includes a label and optional placeholder text. It supports controlled input, disabled state, and styling via Tailwind CSS.",
-    "content": "import { useState } from 'react'\nimport { TextInput } from \"@/components/ui/text-input\"\n\n## Preview\n\n## Code\n\n```tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInput\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;\n```\n\n*Last updated: June 2025*\n",
+    "content": "import { useState } from 'react'\nimport { TextInput } from \"@/components/ui-library/TextInput\"\n\n## Preview\n\n<TextInput id=\"username\" label=\"Username\" placeholder=\"Enter your username\" />\n\n## Codes\n\n```tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInputs\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;\n```\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "import usestate from react import textinput from components ui text-input preview code last updated: june 2025",
+      "cleanContent": "import usestate from react import textinput from components ui-library textinput preview textinput id username label username placeholder enter your username codes last updated: june 2025",
       "headings": [
         "Preview",
-        "Code"
+        "Codes"
       ],
       "keywords": [
         "navigation",
@@ -570,8 +570,8 @@
         "nextjs",
         "documents",
         "Preview",
-        "Code",
-        "tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInput\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;"
+        "Codes",
+        "tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInputs\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;"
       ]
     }
   }
