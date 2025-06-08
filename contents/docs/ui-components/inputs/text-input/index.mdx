@@ -4,20 +4,24 @@ description: The TextInput component allows users to enter single-line text. It 
 keywords: ["navigation", "sidebar", "menus", "mdx", "nextjs", "documents"]
 ---
 import { useState } from 'react'
-import { TextInput } from "@/components/ui/text-input"
+import { TextInput } from "@/components/ui-library/TextInput"
 
 ## Preview
 
+<TextInput
+  id="username"
+  label="Username"
+  placeholder="Enter your username"
+/>
 
-
-## Code
+## Codes
 
 ```tsx live
 function Example() {
   const [value, setValue] = useState("");
 
   return (
-    <TextInput
+    <TextInputs
       id="example"
       label="Your name"
       placeholder="Enter your name"
