@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 type TextInputProps = {
   id: string;
@@ -8,6 +9,7 @@ type TextInputProps = {
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
+  className?: string;
 };
 
 export const TextInput: React.FC<TextInputProps> = ({
@@ -17,9 +19,10 @@ export const TextInput: React.FC<TextInputProps> = ({
   value,
   onChange,
   disabled = false,
+  className,
 }) => {
   return (
-    <div className="flex flex-col space-y-1">
+    <div className={cn("flex flex-col space-y-1", className)}>
       <label htmlFor={id} className="text-sm font-medium text-gray-700">
         {label}
       </label>

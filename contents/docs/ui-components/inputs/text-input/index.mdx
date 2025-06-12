@@ -1,36 +1,144 @@
 ---
 title: Text Inputs
-description: The TextInput component allows users to enter single-line text. It includes a label and optional placeholder text. It supports controlled input, disabled state, and styling via Tailwind CSS.
-keywords: ["navigation", "sidebar", "menus", "mdx", "nextjs", "documents"]
+description: Displays a form input field or a component that looks like an input field.
+keywords: ["components", "ui-library", "inputs", "text-input", "mdx", "nextjs", "documents"]
 ---
-import { useState } from 'react'
-import { TextInput } from "@/components/ui-library/TextInput"
 
-## Preview
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 
-<TextInput
-  id="username"
-  label="Username"
-  placeholder="Enter your username"
-/>
 
-## Codes
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <TextInput
+        id="username"
+        label="Username"
+        placeholder="Enter your username"
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    import React from "react";
 
-```tsx live
-function Example() {
-  const [value, setValue] = useState("");
+    type TextInputProps = {
+      id: string;
+      label: string;
+      placeholder?: string;
+      value?: string;
+      onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+      disabled?: boolean;
+    };
 
-  return (
-    <TextInputs
+    export const TextInput: React.FC<TextInputProps> = ({
+      id,
+      label,
+      placeholder,
+      value,
+      onChange,
+      disabled = false,
+    }) => {
+      return (
+        <div className="flex flex-col space-y-1">
+          <label htmlFor={id} className="text-sm font-medium text-gray-700">
+            {label}
+          </label>
+          <input
+            type="text"
+            id={id}
+            placeholder={placeholder}
+            value={value}
+            onChange={onChange}
+            disabled={disabled}
+            className="rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:bg-gray-100"
+          />
+        </div>
+      );
+    };
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `TextInput.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `TextInput.tsx` file.
+  </StepItem>
+
+
+  <StepItem title="Use the Component">
+    Insert the following code into the Page or Component where you want to use the TextInput component.
+
+    ```tsx
+    <TextInput
       id="example"
-      label="Your name"
+      label="Label"
       placeholder="Enter your name"
       value={value}
       onChange={(e) => setValue(e.target.value)}
     />
-  );
-}
+    ```
+  </StepItem>
+</Step>
 
-export default Example;
-```
+
+## Props
+
+| Prop | Type | Description |
+|------|------|-------------|
+| id | string | Unique identifier for the input field |
+| label | string | Label text displayed above the input |
+| placeholder | string | Placeholder text shown when input is empty |
+| value | string | Controlled input value |
+| onChange | function | Callback function when input value changes |
+| disabled | boolean | Whether the input is disabled |
+
+## Examples
+
+### Disabled State
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <TextInput
+        id="username"
+        label="Username"
+        placeholder="Enter your username"
+        className="w-full max-w-[50%]"
+        disabled={true}
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <TextInput
+      id="username"
+      label="Username"
+      placeholder="Enter your username"
+      disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+<br />
+<br />
 _Last updated: June 2025_

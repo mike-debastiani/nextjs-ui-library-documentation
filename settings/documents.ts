@@ -8,7 +8,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Concept",
-    href: "/mentoring",
+    href: "/concept",
   },
   {
     spacer: true,
