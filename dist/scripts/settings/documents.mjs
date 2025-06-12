@@ -6,7 +6,7 @@ export const Documents = [
     },
     {
         title: "Concept",
-        href: "/mentoring",
+        href: "/concept",
     },
     {
         spacer: true,

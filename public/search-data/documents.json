@@ -554,24 +554,26 @@
   {
     "slug": "/ui-components/inputs/text-input",
     "title": "Text Inputs",
-    "description": "The TextInput component allows users to enter single-line text. It includes a label and optional placeholder text. It supports controlled input, disabled state, and styling via Tailwind CSS.",
-    "content": "import { useState } from 'react'\nimport { TextInput } from \"@/components/ui-library/TextInput\"\n\n## Preview\n\n<TextInput id=\"username\" label=\"Username\" placeholder=\"Enter your username\" />\n\n## Codes\n\n```tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInputs\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;\n```\n\n*Last updated: June 2025*\n",
+    "description": "Displays a form input field or a component that looks like an input field.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the input field |\n| label | string | Label text displayed above the input |\n| placeholder | string | Placeholder text shown when input is empty |\n| value | string | Controlled input value |\n| onChange | function | Callback function when input value changes |\n| disabled | boolean | Whether the input is disabled |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "import usestate from react import textinput from components ui-library textinput preview textinput id username label username placeholder enter your username codes last updated: june 2025",
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------id string unique identifier for the input fieldlabel string label text displayed above the inputplaceholder string placeholder text shown when input is emptyvalue string controlled input valueonchange function callback function when input value changesdisabled boolean whether the input is disabled examples disabled state br br last updated: june 2025",
       "headings": [
-        "Preview",
-        "Codes"
+        "Setup & Usage",
+        "Props",
+        "Examples"
       ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
+        "components",
+        "ui-library",
+        "inputs",
+        "text-input",
         "mdx",
         "nextjs",
         "documents",
-        "Preview",
-        "Codes",
-        "tsx live\nfunction Example() {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <TextInputs\n      id=\"example\"\n      label=\"Your name\"\n      placeholder=\"Enter your name\"\n      value={value}\n      onChange={(e) => setValue(e.target.value)}\n    />\n  );\n}\n\nexport default Example;"
+        "Setup & Usage",
+        "Props",
+        "Examples"
       ]
     }
   }
