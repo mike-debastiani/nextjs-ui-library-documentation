@@ -17,12 +17,12 @@ export const Documents = [
         href: "/ui-components/inputs",
         items: [
             {
-                title: "Text Input",
-                href: "/text-input",
-            },
-            {
                 title: "Button",
                 href: "/button",
+            },
+            {
+                title: "Text Input",
+                href: "/text-input",
             },
             {
                 title: "Checkbox",
