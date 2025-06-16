@@ -8,6 +8,7 @@ import Mermaid from "@/components/markdown/mermaid"
 import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
 import { TextInput } from "@/components/ui-library/TextInput"
+import { Button } from "@/components/ui/button"
 
 export const components = {
   a: RoutedLink,
@@ -26,4 +27,5 @@ export const components = {
   TabsList,
   TabsTrigger,
   TextInput,
+  Button,
 }
