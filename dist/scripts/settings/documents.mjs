@@ -21,6 +21,10 @@ export const Documents = [
                 href: "/text-input",
             },
             {
+                title: "Button",
+                href: "/button",
+            },
+            {
                 title: "Checkbox",
                 href: "/checkbox",
             },
