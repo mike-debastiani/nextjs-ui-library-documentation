@@ -462,6 +462,36 @@
     }
   },
   {
+    "slug": "/ui-components/inputs/button",
+    "title": "Button",
+    "description": "Displays a button or a component that looks like a button.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Button } from \"@/components/ui/button\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| variant | \"default\" | \"destructive\" | \"outline\" | \"secondary\" | \"ghost\" | \"link\" | The visual style of the button |\n| size | \"default\" | \"sm\" | \"lg\" | \"icon\" | The size of the button |\n| asChild | boolean | Whether to render as a child component using Radix UI Slot |\n| className | string | Additional CSS classes to apply |\n| disabled | boolean | Whether the button is disabled |\n\n## Variants\n\n### Default\n\n### Destructive\n\n### Outline\n\n### Secondary\n\n### Ghost\n\n### Link\n\n## Sizes\n\n### Default\n\n### Small\n\n### Large\n\n### Icon\n\n## States\n\n### Disabled\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import button from components ui button setup usage props prop type description------ ------ -------------variant default destructive outline secondary ghost link the visual style of the buttonsize default sm lg icon the size of the buttonaschild boolean whether to render as a child component using radix ui slotclassname string additional css classes to applydisabled boolean whether the button is disabled variants default destructive outline secondary ghost link sizes default small large icon states disabled br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Variants",
+        "Sizes",
+        "States"
+      ],
+      "keywords": [
+        "components",
+        "ui-library",
+        "inputs",
+        "button",
+        "mdx",
+        "nextjs",
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Variants",
+        "Sizes",
+        "States"
+      ]
+    }
+  },
+  {
     "slug": "/ui-components/inputs/checkbox",
     "title": "Checkbox",
     "description": "How to build our your documents menu and navigations.",
