@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
   </TabsList>
   <TabsContent value="preview" className="mt-4 justify-center">
     <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center gap-4">
-      <Button>Default Button</Button>
+      <Button>Button</Button>
     </div>
   </TabsContent>
   <TabsContent value="code" className="mt-4">
@@ -88,11 +88,11 @@ import { Button } from "@/components/ui/button"
 
 <Step>
   <StepItem title="Create a new Component">
-    Create a new component in the `@/components/ui-library` directory with the file name `TextInput.tsx`.
+    Create a new component in the `@/components/ui-library` directory with the file name `Button.tsx`.
   </StepItem>
 
   <StepItem title="Copy the Full Code inside the component">
-    Copy the full code from the "Full Code" tab above and paste it into the `TextInput.tsx` file.
+    Copy the full code from the "Full Code" tab above and paste it into the `Button.tsx` file.
   </StepItem>
 
 
@@ -118,120 +118,34 @@ import { Button } from "@/components/ui/button"
 
 ## Variants
 
-### Default
 <Tabs defaultValue="preview">
   <TabsList>
     <TabsTrigger value="preview">Preview</TabsTrigger>
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
   <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
+    <div className="justify-center border rounded-md bg-white p-6 flex flex-col items-center gap-6">
       <Button variant="default">Default Button</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button variant="default">Default Button</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Destructive
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
-      <Button variant="destructive">Delete</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button variant="destructive">Delete</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Outline
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
+      <Button variant="destructive">Destructive Button</Button>
       <Button variant="outline">Outline Button</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button variant="outline">Outline Button</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Secondary
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
       <Button variant="secondary">Secondary Button</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button variant="secondary">Secondary Button</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Ghost
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
       <Button variant="ghost">Ghost Button</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button variant="ghost">Ghost Button</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Link
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
       <Button variant="link">Link Button</Button>
     </div>
   </TabsContent>
   <TabsContent value="code" className="mt-4">
     <div className="[&_pre]:!my-0">
     ```tsx
+    <Button variant="default">Default Button</Button>
+
+    <Button variant="destructive">Destructive Button</Button>
+
+    <Button variant="outline">Outline Button</Button>
+
+    <Button variant="secondary">Secondary Button</Button>
+
+    <Button variant="ghost">Ghost Button</Button>
+
     <Button variant="link">Link Button</Button>
     ```
     </div>
@@ -240,107 +154,34 @@ import { Button } from "@/components/ui/button"
 
 ## Sizes
 
-### Default
 <Tabs defaultValue="preview">
   <TabsList>
     <TabsTrigger value="preview">Preview</TabsTrigger>
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
   <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
-      <Button size="default">Default Size</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button size="default">Default Size</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Small
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
-      <Button size="sm">Small Size</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button size="sm">Small Size</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-### Large
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
+    <div className="justify-center border rounded-md bg-white p-6 flex flex-col items-center gap-6">
       <Button size="lg">Large Size</Button>
+      <Button size="default">Default Size</Button>
+      <Button size="sm">Small Size</Button>
+      <Button size="icon">❖</Button>
     </div>
   </TabsContent>
   <TabsContent value="code" className="mt-4">
     <div className="[&_pre]:!my-0">
     ```tsx
     <Button size="lg">Large Size</Button>
+
+    <Button size="default">Default Size</Button>
+
+    <Button size="sm">Small Size</Button>
+
+    <Button size="icon">❖</Button>
     ```
     </div>
   </TabsContent>
 </Tabs>
 
-### Icon
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
-      <Button size="icon">🔍</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button size="icon">🔍</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
-
-## States
-
-### Disabled
-<Tabs defaultValue="preview">
-  <TabsList>
-    <TabsTrigger value="preview">Preview</TabsTrigger>
-    <TabsTrigger value="code">Code</TabsTrigger>
-  </TabsList>
-  <TabsContent value="preview" className="mt-4 justify-center">
-    <div className="justify-center border rounded-md bg-white p-4 flex items-center gap-4">
-      <Button disabled>Disabled Button</Button>
-    </div>
-  </TabsContent>
-  <TabsContent value="code" className="mt-4">
-    <div className="[&_pre]:!my-0">
-    ```tsx
-    <Button disabled>Disabled Button</Button>
-    ```
-    </div>
-  </TabsContent>
-</Tabs>
 
 <br />
 <br />

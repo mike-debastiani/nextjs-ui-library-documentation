@@ -19,6 +19,10 @@ export const Documents: Paths[] = [
     href: "/ui-components/inputs",
     items: [
       {
+        title: "Button",
+        href: "/button",
+      },
+      {
         title: "Text Input",
         href: "/text-input",
       },
