@@ -462,9 +462,9 @@
     }
   },
   {
-    "slug": "/ui-components",
-    "title": "UI Components",
-    "description": "How to build our your documents menu and navigations.",
+    "slug": "/ui-components/composite-components",
+    "title": "Composite Components",
+    "description": "Description of composite components.",
     "content": "",
     "_searchMeta": {
       "cleanContent": "",
@@ -480,7 +480,7 @@
     }
   },
   {
-    "slug": "/ui-components/inputs/button",
+    "slug": "/ui-components/form-controls/button",
     "title": "Button",
     "description": "Displays a button or a component that looks like a button.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Button } from \"@/components/ui/button\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| variant | \"default\" | \"destructive\" | \"outline\" | \"secondary\" | \"ghost\" | \"link\" | The visual style of the button |\n| size | \"default\" | \"sm\" | \"lg\" | \"icon\" | The size of the button |\n| asChild | boolean | Whether to render as a child component using Radix UI Slot |\n| className | string | Additional CSS classes to apply |\n| disabled | boolean | Whether the button is disabled |\n\n## Variants\n\n## Sizes\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
@@ -508,12 +508,12 @@
     }
   },
   {
-    "slug": "/ui-components/inputs/checkbox",
+    "slug": "/ui-components/form-controls/checkbox",
     "title": "Checkbox",
     "description": "Displays a checkbox input with an integrated label and optional description.",
-    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { CheckboxPreview } from \"@/components/ui-library/CheckboxPreview\"\nimport { FastForward } from 'lucide-react'\n\n## Setup & Usage\n\n## Props\n\n| Prop        | Type      | Description                                      |\n|-------------|-----------|--------------------------------------------------|\n| label       | string    | Label text displayed next to the checkbox         |\n| description | string    | Optional description below the label              |\n| checked     | boolean   | Controlled checked state                          |\n| disabled    | boolean   | Whether the checkbox is disabled                  |\n| onChange    | function  | Callback when the checked state changes           |\n| className   | string    | Optional additional class names for styling       |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Checkbox } from \"@/components/ui-library/Checkbox\"\n\n## Setup & Usage\n\n## Props\n\n| Prop        | Type      | Description                                      |\n|-------------|-----------|--------------------------------------------------|\n| label       | string    | Label text displayed next to the checkbox         |\n| description | string    | Optional description below the label              |\n| checked     | boolean   | Optional controlled checked state                 |\n| disabled    | boolean   | Whether the checkbox is disabled                  |\n| onChange    | function  | Callback when the checked state changes           |\n| className   | string    | Optional additional class names for styling       |\n\n## Examples\n\n### Disabled State\n\n### Controlled State Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import checkboxpreview from components ui-library checkboxpreview import fastforward from lucide-react setup usage props prop type description------------- ----------- --------------------------------------------------label string label text displayed next to the checkboxdescription string optional description below the labelchecked boolean controlled checked statedisabled boolean whether the checkbox is disabledonchange function callback when the checked state changesclassname string optional additional class names for styling examples disabled state br br last updated: june 2025",
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import checkbox from components ui-library checkbox setup usage props prop type description------------- ----------- --------------------------------------------------label string label text displayed next to the checkboxdescription string optional description below the labelchecked boolean optional controlled checked statedisabled boolean whether the checkbox is disabledonchange function callback when the checked state changesclassname string optional additional class names for styling examples disabled state controlled state example br br last updated: june 2025",
       "headings": [
         "Setup & Usage",
         "Props",
@@ -534,9 +534,9 @@
     }
   },
   {
-    "slug": "/ui-components/inputs",
-    "title": "Inputs",
-    "description": "How to build our your documents menu and navigations.",
+    "slug": "/ui-components/form-controls",
+    "title": "Form Controls",
+    "description": "Description of form controls.",
     "content": "",
     "_searchMeta": {
       "cleanContent": "",
@@ -552,43 +552,60 @@
     }
   },
   {
-    "slug": "/ui-components/inputs/radio-button",
+    "slug": "/ui-components/form-controls/radio-button",
     "title": "Radio Button",
     "description": "How to build our your documents menu and navigations.",
-    "content": "",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { RadioButton } from \"@/components/ui-library/RadioButton\"\n\n## Setup & Usage\n\n## Props\n\n| Prop           | Type      | Description                                        |\n|----------------|-----------|---------------------------------------------------|\n| id             | string    | Unique identifier for the radio button             |\n| name           | string    | Group name for the radio button set               |\n| label          | string    | Label text displayed next to the radio button     |\n| value          | string    | Value associated with the radio button            |\n| defaultChecked | boolean   | Whether the radio button is checked by default    |\n| disabled       | boolean   | Whether the radio button is disabled              |\n| onChange       | function  | Callback when the radio button selection changes  |\n\n## Examples\n\n### Disabled State\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import radiobutton from components ui-library radiobutton setup usage props prop type description---------------- ----------- ---------------------------------------------------id string unique identifier for the radio buttonname string group name for the radio button setlabel string label text displayed next to the radio buttonvalue string value associated with the radio buttondefaultchecked boolean whether the radio button is checked by defaultdisabled boolean whether the radio button is disabledonchange function callback when the radio button selection changes examples disabled state",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Examples"
+      ],
       "keywords": [
         "navigation",
         "sidebar",
         "menus",
         "mdx",
         "nextjs",
-        "documents"
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Examples"
       ]
     }
   },
   {
-    "slug": "/ui-components/inputs/select-dropdown",
+    "slug": "/ui-components/form-controls/select-dropdown",
     "title": "Select Dropdown",
-    "description": "How to build our your documents menu and navigations.",
-    "content": "",
+    "description": "Displays a list of options for the user to pick from—triggered by a button.",
+    "content": "import { SelectDropdown } from \"@/components/ui-library/SelectDropdown\"\nimport { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| placeholder | string | Text shown when no option is selected |\n| groups | `Array<{ groupLabel: string, options: Array<{ label: string, value: string }> }>` | Array of option groups to display in the dropdown |\n| value | string | Controlled value of the selected option |\n| onChange | function | Callback when an option is selected |\n| className | string | Additional CSS classes to apply |\n\n## Examples\n\n### Multiple Groups Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "import selectdropdown from components ui-library selectdropdown import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------placeholder string text shown when no option is selectedgroups array grouplabel: string options: array label: string value: string array of option groups to display in the dropdownvalue string controlled value of the selected optiononchange function callback when an option is selectedclassname string additional css classes to apply examples multiple groups example br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Examples"
+      ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
+        "components",
+        "ui-library",
+        "inputs",
+        "select",
+        "dropdown",
         "mdx",
         "nextjs",
-        "documents"
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Examples",
+        "Array<{ groupLabel: string, options: Array<{ label: string, value: string }> }>"
       ]
     }
   },
   {
-    "slug": "/ui-components/inputs/switch-toggle",
+    "slug": "/ui-components/form-controls/switch-toggle",
     "title": "Switch Toggle",
     "description": "How to build our your documents menu and navigations.",
     "content": "",
@@ -606,7 +623,7 @@
     }
   },
   {
-    "slug": "/ui-components/inputs/text-input",
+    "slug": "/ui-components/form-controls/text-input",
     "title": "Text Inputs",
     "description": "Displays a form input field or a component that looks like an input field.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the input field |\n| label | string | Label text displayed above the input |\n| placeholder | string | Placeholder text shown when input is empty |\n| value | string | Controlled input value |\n| onChange | function | Callback function when input value changes |\n| disabled | boolean | Whether the input is disabled |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
@@ -628,6 +645,24 @@
         "Setup & Usage",
         "Props",
         "Examples"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components",
+    "title": "UI Components",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
       ]
     }
   }
