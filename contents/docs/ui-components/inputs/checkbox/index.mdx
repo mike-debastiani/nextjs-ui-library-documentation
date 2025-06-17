@@ -1,5 +1,142 @@
 ---
 title: Checkbox
-description: How to build our your documents menu and navigations.
-keywords: ["navigation", "sidebar", "menus", "mdx", "nextjs", "documents"]
+description: Displays a checkbox input with an integrated label and optional description.
+keywords: ["components", "ui-library", "inputs", "checkbox", "mdx", "nextjs", "documents"]
 ---
+
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { CheckboxPreview } from "@/components/ui-library/CheckboxPreview"
+import { FastForward } from 'lucide-react'
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <CheckboxPreview
+        label="Accept terms and conditions"
+        description="By clicking this checkbox, you agree to the terms and conditions."
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    import React from "react";
+
+    interface CheckboxProps {
+      label: string;
+      description?: string;
+      checked?: boolean;
+      disabled?: boolean;
+      onChange?: (checked: boolean) => void;
+      className?: string;
+    }
+
+    export const Checkbox: React.FC<CheckboxProps> = ({
+      label,
+      description,
+      checked = false,
+      disabled = false,
+      onChange,
+      className = "",
+    }) => {
+      return (
+        <label
+          className={`flex items-start gap-3 cursor-pointer select-none ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`}
+        >
+          <input
+            type="checkbox"
+            checked={checked}
+            disabled={disabled}
+            onChange={e => onChange?.(e.target.checked)}
+            className="mt-1 h-6 w-6 rounded border border-gray-300 bg-white checked:bg-black checked:border-black focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:border-gray-200 transition-all"
+          />
+          <div>
+            <span className={`block text-lg font-semibold ${disabled ? "text-gray-400" : "text-gray-900"}`}>{label}</span>
+            {description && (
+              <span className="block text-base text-gray-400 mt-1">{description}</span>
+            )}
+          </div>
+        </label>
+      );
+    };
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `Checkbox.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `Checkbox.tsx` file.
+  </StepItem>
+
+  <StepItem title="Use the Component">
+    Insert the following code into the Page or Component where you want to use the Checkbox component.
+
+    ```tsx
+    <Checkbox
+      label="Accept terms and conditions"
+      description="By clicking this checkbox, you agree to the terms and conditions."
+      checked={isChecked}
+      onChange={setIsChecked}
+    />
+    ```
+  </StepItem>
+</Step>
+
+## Props
+
+| Prop        | Type      | Description                                      |
+|-------------|-----------|--------------------------------------------------|
+| label       | string    | Label text displayed next to the checkbox         |
+| description | string    | Optional description below the label              |
+| checked     | boolean   | Controlled checked state                          |
+| disabled    | boolean   | Whether the checkbox is disabled                  |
+| onChange    | function  | Callback when the checked state changes           |
+| className   | string    | Optional additional class names for styling       |
+
+## Examples
+
+### Disabled State
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <CheckboxPreview
+        label="Disabled Checkbox"
+      description="This checkbox is disabled and cannot be checked."
+      checked={false}
+      disabled={true}
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <Checkbox
+      label="Disabled Checkbox"
+      description="This checkbox is disabled and cannot be checked."
+      checked={false}
+      disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+<br />
+<br />
+_Last updated: June 2025_
