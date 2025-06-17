@@ -15,8 +15,8 @@ export const Documents: Paths[] = [
   },
   {
     heading: "UI Components",
-    title: "Inputs",
-    href: "/ui-components/inputs",
+    title: "Form Controls",
+    href: "/ui-components/form-controls",
     items: [
       {
         title: "Button",
@@ -45,39 +45,25 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    title: "Buttons",
-    href: "/ui-components/buttons",
+    title: "Composite Components",
+    href: "/ui-components/composite-components",
     items: [
-      {
-        title: "Primary Button",
-        href: "/primary-button",
-      },
-      {
-        title: "Secondary Button",
-        href: "/secondary-button",
-      },
-      {
-        title: "Icon Button",
-        href: "/icon-button",
-      },
-    ],
-  },
-  {
-    title: "Feedback",
-    href: "/ui-components/feedback",
-    items: [
-      {
-        title: "Alerts",
-        href: "/alerts",
-      },
-      {
-        title: "Tooltips",
-        href: "/tooltips",
-      },
-      {
-        title: "Badges",
-        href: "/badges",
-      },
+        {
+            title: "Login Form",
+            href: "/login-form",
+        },
+        {
+            title: "Newsletter Signup",
+            href: "/newsletter-signup",
+        },
+        {
+            title: "Contact Form",
+            href: "/contact-form",
+        },
+        {
+            title: "Date Picker",
+            href: "/date-picker",
+        },
     ],
   },
   {

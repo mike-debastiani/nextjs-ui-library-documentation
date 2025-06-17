@@ -5,8 +5,8 @@ keywords: ["components", "ui-library", "inputs", "checkbox", "mdx", "nextjs", "d
 ---
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
-import { CheckboxPreview } from "@/components/ui-library/CheckboxPreview"
-import { FastForward } from 'lucide-react'
+import { Checkbox } from "@/components/ui-library/Checkbox"
+
 
 <Tabs defaultValue="preview">
   <TabsList>
@@ -15,7 +15,7 @@ import { FastForward } from 'lucide-react'
   </TabsList>
   <TabsContent value="preview" className="mt-4 justify-center">
     <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
-      <CheckboxPreview
+      <Checkbox
         label="Accept terms and conditions"
         description="By clicking this checkbox, you agree to the terms and conditions."
       />
@@ -24,7 +24,8 @@ import { FastForward } from 'lucide-react'
   <TabsContent value="code" className="mt-4">
     <div className="[&_pre]:!my-0">
     ```tsx
-    import React from "react";
+    "use client";
+    import React, { useState } from "react";
 
     interface CheckboxProps {
       label: string;
@@ -38,20 +39,32 @@ import { FastForward } from 'lucide-react'
     export const Checkbox: React.FC<CheckboxProps> = ({
       label,
       description,
-      checked = false,
+      checked: controlledChecked,
       disabled = false,
       onChange,
       className = "",
     }) => {
+      const [internalChecked, setInternalChecked] = useState(false);
+  
+      const isChecked = controlledChecked !== undefined ? controlledChecked : internalChecked;
+
+      const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newValue = e.target.checked;
+        if (controlledChecked === undefined) {
+          setInternalChecked(newValue);
+        }
+        onChange?.(newValue);
+      };
+
       return (
         <label
           className={`flex items-start gap-3 cursor-pointer select-none ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`}
         >
           <input
             type="checkbox"
-            checked={checked}
+            checked={isChecked}
             disabled={disabled}
-            onChange={e => onChange?.(e.target.checked)}
+            onChange={handleChange}
             className="mt-1 h-6 w-6 rounded border border-gray-300 bg-white checked:bg-black checked:border-black focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:border-gray-200 transition-all"
           />
           <div>
@@ -63,6 +76,8 @@ import { FastForward } from 'lucide-react'
         </label>
       );
     };
+
+    export default Checkbox;
     ```
     </div>
   </TabsContent>
@@ -80,9 +95,20 @@ import { FastForward } from 'lucide-react'
   </StepItem>
 
   <StepItem title="Use the Component">
-    Insert the following code into the Page or Component where you want to use the Checkbox component.
+    The Checkbox component can be used in two ways:
 
+    1. Uncontrolled (with internal state):
     ```tsx
+    <Checkbox
+      label="Accept terms and conditions"
+      description="By clicking this checkbox, you agree to the terms and conditions."
+    />
+    ```
+
+    2. Controlled (with external state):
+    ```tsx
+    const [isChecked, setIsChecked] = useState(false);
+    
     <Checkbox
       label="Accept terms and conditions"
       description="By clicking this checkbox, you agree to the terms and conditions."
@@ -99,7 +125,7 @@ import { FastForward } from 'lucide-react'
 |-------------|-----------|--------------------------------------------------|
 | label       | string    | Label text displayed next to the checkbox         |
 | description | string    | Optional description below the label              |
-| checked     | boolean   | Controlled checked state                          |
+| checked     | boolean   | Optional controlled checked state                 |
 | disabled    | boolean   | Whether the checkbox is disabled                  |
 | onChange    | function  | Callback when the checked state changes           |
 | className   | string    | Optional additional class names for styling       |
@@ -115,11 +141,11 @@ import { FastForward } from 'lucide-react'
   </TabsList>
   <TabsContent value="preview" className="mt-4 justify-center">
     <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
-      <CheckboxPreview
+      <Checkbox
         label="Disabled Checkbox"
-      description="This checkbox is disabled and cannot be checked."
-      checked={false}
-      disabled={true}
+        description="This checkbox is disabled and cannot be checked."
+        checked={false}
+        disabled={true}
       />
     </div>
   </TabsContent>
@@ -131,6 +157,38 @@ import { FastForward } from 'lucide-react'
       description="This checkbox is disabled and cannot be checked."
       checked={false}
       disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+### Controlled State Example
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <Checkbox
+        label="Controlled Checkbox"
+        description="This checkbox is controlled by parent state."
+        checked={true}
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    const [isChecked, setIsChecked] = useState(true);
+    
+    <Checkbox
+      label="Controlled Checkbox"
+      description="This checkbox is controlled by parent state."
+      checked={isChecked}
+      onChange={setIsChecked}
     />
     ```
     </div>

@@ -9,7 +9,9 @@ import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
 import { TextInput } from "@/components/ui-library/TextInput"
 import { Button } from "@/components/ui/button"
-import { CheckboxPreview } from "@/components/ui-library/CheckboxPreview"
+import { Checkbox } from "@/components/ui-library/Checkbox"
+import { RadioButton } from "@/components/ui-library/RadioButton"
+import { SelectDropdown } from "@/components/ui-library/SelectDropdown"
 
 export const components = {
   a: RoutedLink,
@@ -29,5 +31,7 @@ export const components = {
   TabsTrigger,
   TextInput,
   Button,
-  CheckboxPreview,
+  Checkbox,
+  RadioButton,
+  SelectDropdown,
 }

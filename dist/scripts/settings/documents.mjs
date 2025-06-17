@@ -13,8 +13,8 @@ export const Documents = [
     },
     {
         heading: "UI Components",
-        title: "Inputs",
-        href: "/ui-components/inputs",
+        title: "Form Controls",
+        href: "/ui-components/form-controls",
         items: [
             {
                 title: "Button",
@@ -43,38 +43,24 @@ export const Documents = [
         ],
     },
     {
-        title: "Buttons",
-        href: "/ui-components/buttons",
+        title: "Composite Components",
+        href: "/ui-components/composite-components",
         items: [
             {
-                title: "Primary Button",
-                href: "/primary-button",
+                title: "Login Form",
+                href: "/login-form",
             },
             {
-                title: "Secondary Button",
-                href: "/secondary-button",
+                title: "Newsletter Signup",
+                href: "/newsletter-signup",
             },
             {
-                title: "Icon Button",
-                href: "/icon-button",
-            },
-        ],
-    },
-    {
-        title: "Feedback",
-        href: "/ui-components/feedback",
-        items: [
-            {
-                title: "Alerts",
-                href: "/alerts",
+                title: "Contact Form",
+                href: "/contact-form",
             },
             {
-                title: "Tooltips",
-                href: "/tooltips",
-            },
-            {
-                title: "Badges",
-                href: "/badges",
+                title: "Date Picker",
+                href: "/date-picker",
             },
         ],
     },

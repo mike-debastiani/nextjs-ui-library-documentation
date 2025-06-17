@@ -1,0 +1,179 @@
+---
+title: Radio Button
+description: How to build our your documents menu and navigations.
+keywords: ["navigation", "sidebar", "menus", "mdx", "nextjs", "documents"]
+---
+
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { RadioButton } from "@/components/ui-library/RadioButton"
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <div className="flex flex-col gap-4">
+      <RadioButton
+        id="option1"
+        name="demo"
+        label="Option 1"
+        value="option1"
+      />
+      <RadioButton
+        id="option2"
+        name="demo"
+        label="Option 2"
+        value="option2"
+      />
+      <RadioButton
+        id="option3"
+        name="demo"
+        label="Option 3"
+        value="option3"
+      />
+      </div>
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    "use client";
+
+    import React from "react";
+
+    type RadioButtonProps = {
+      id: string;
+      name: string;
+      label: string;
+      value: string;
+      defaultChecked?: boolean;
+      disabled?: boolean;
+      onChange?: (value: string) => void;
+    };
+
+    export const RadioButton: React.FC<RadioButtonProps> = ({
+      id,
+      name,
+      label,
+      value,
+      defaultChecked = false,
+      disabled = false,
+      onChange,
+    }) => {
+      return (
+        <label
+          htmlFor={id}
+          className={`flex items-center space-x-2 cursor-pointer select-none ${
+            disabled ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+        >
+          <input
+            type="radio"
+            id={id}
+            name={name}
+            value={value}
+            defaultChecked={defaultChecked}
+            disabled={disabled}
+            onChange={() => onChange?.(value)}
+            className="h-5 w-5 accent-blue-600 focus:ring-blue-500"
+          />
+          <span className="text-sm text-gray-800">{label}</span>
+        </label>
+      );
+    };
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `RadioButton.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `RadioButton.tsx` file.
+  </StepItem>
+
+  <StepItem title="Use the Component">
+    The RadioButton component can be used in two ways:
+
+    1. Basic usage:
+    ```tsx
+    <RadioButton
+      id="option1"
+      name="group1"
+      label="Option 1"
+      value="option1"
+    />
+    ```
+
+    2. With onChange handler:
+    ```tsx
+    const handleChange = (value: string) => {
+      console.log('Selected value:', value);
+    };
+    
+    <RadioButton
+      id="option1"
+      name="group1"
+      label="Option 1"
+      value="option1"
+      onChange={handleChange}
+    />
+    ```
+  </StepItem>
+</Step>
+
+## Props
+
+| Prop           | Type      | Description                                        |
+|----------------|-----------|---------------------------------------------------|
+| id             | string    | Unique identifier for the radio button             |
+| name           | string    | Group name for the radio button set               |
+| label          | string    | Label text displayed next to the radio button     |
+| value          | string    | Value associated with the radio button            |
+| defaultChecked | boolean   | Whether the radio button is checked by default    |
+| disabled       | boolean   | Whether the radio button is disabled              |
+| onChange       | function  | Callback when the radio button selection changes  |
+
+## Examples
+
+### Disabled State
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <div className="space-y-4">
+        <RadioButton
+          id="disabled-option"
+          name="disabled-group"
+          label="Disabled Option"
+          value="disabled"
+          disabled={true}
+        />
+      </div>
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <RadioButton
+      id="disabled-option"
+      name="disabled-group"
+      label="Disabled Option"
+      value="disabled"
+      disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>

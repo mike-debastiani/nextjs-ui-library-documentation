@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 interface CheckboxProps {
   label: string;
@@ -14,20 +14,32 @@ interface CheckboxProps {
 export const Checkbox: React.FC<CheckboxProps> = ({
   label,
   description,
-  checked = false,
+  checked: controlledChecked,
   disabled = false,
   onChange,
   className = "",
 }) => {
+  const [internalChecked, setInternalChecked] = useState(false);
+  
+  const isChecked = controlledChecked !== undefined ? controlledChecked : internalChecked;
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = e.target.checked;
+    if (controlledChecked === undefined) {
+      setInternalChecked(newValue);
+    }
+    onChange?.(newValue);
+  };
+
   return (
     <label
       className={`flex items-start gap-3 cursor-pointer select-none ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`}
     >
       <input
         type="checkbox"
-        checked={checked}
+        checked={isChecked}
         disabled={disabled}
-        onChange={e => onChange?.(e.target.checked)}
+        onChange={handleChange}
         className="mt-1 h-6 w-6 rounded border border-gray-300 bg-white checked:bg-black checked:border-black focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:border-gray-200 transition-all"
       />
       <div>
