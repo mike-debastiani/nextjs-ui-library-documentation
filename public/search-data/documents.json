@@ -510,18 +510,26 @@
   {
     "slug": "/ui-components/inputs/checkbox",
     "title": "Checkbox",
-    "description": "How to build our your documents menu and navigations.",
-    "content": "",
+    "description": "Displays a checkbox input with an integrated label and optional description.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { CheckboxPreview } from \"@/components/ui-library/CheckboxPreview\"\nimport { FastForward } from 'lucide-react'\n\n## Setup & Usage\n\n## Props\n\n| Prop        | Type      | Description                                      |\n|-------------|-----------|--------------------------------------------------|\n| label       | string    | Label text displayed next to the checkbox         |\n| description | string    | Optional description below the label              |\n| checked     | boolean   | Controlled checked state                          |\n| disabled    | boolean   | Whether the checkbox is disabled                  |\n| onChange    | function  | Callback when the checked state changes           |\n| className   | string    | Optional additional class names for styling       |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import checkboxpreview from components ui-library checkboxpreview import fastforward from lucide-react setup usage props prop type description------------- ----------- --------------------------------------------------label string label text displayed next to the checkboxdescription string optional description below the labelchecked boolean controlled checked statedisabled boolean whether the checkbox is disabledonchange function callback when the checked state changesclassname string optional additional class names for styling examples disabled state br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Examples"
+      ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
+        "components",
+        "ui-library",
+        "inputs",
+        "checkbox",
         "mdx",
         "nextjs",
-        "documents"
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Examples"
       ]
     }
   },
