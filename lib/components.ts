@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui-library/Checkbox"
 import { RadioButton } from "@/components/ui-library/RadioButton"
 import { SelectDropdown } from "@/components/ui-library/SelectDropdown"
+import { SwitchToggle } from "@/components/ui-library/SwitchToggle"
+import { TextArea } from "@/components/ui-library/TextArea"
 
 export const components = {
   a: RoutedLink,
@@ -34,4 +36,6 @@ export const components = {
   Checkbox,
   RadioButton,
   SelectDropdown,
+  SwitchToggle,
+  TextArea,
 }

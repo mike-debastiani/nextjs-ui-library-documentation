@@ -1,5 +1,214 @@
 ---
-title: Switch Toggle
-description: How to build our your documents menu and navigations.
-keywords: ["navigation", "sidebar", "menus", "mdx", "nextjs", "documents"]
+title: Switch
+description: A toggle switch component that allows users to turn an option on or off.
+keywords: ["components", "ui-library", "inputs", "switch", "toggle", "mdx", "nextjs", "documents"]
 ---
+
+import { SwitchToggle } from "@/components/ui-library/SwitchToggle"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <SwitchToggle
+        label="Enable notifications"
+        description="Receive notifications about new updates"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    "use client";
+
+    import React, { useState } from "react";
+
+    interface SwitchToggleProps {
+      label?: string;
+      description?: string;
+      checked?: boolean;
+      disabled?: boolean;
+      onChange?: (checked: boolean) => void;
+      className?: string;
+    }
+
+    export const SwitchToggle: React.FC<SwitchToggleProps> = ({
+      label,
+      description,
+      checked: controlledChecked,
+      disabled = false,
+      onChange,
+      className = "",
+    }) => {
+      const [internalChecked, setInternalChecked] = useState(false);
+      
+      const isChecked = controlledChecked !== undefined ? controlledChecked : internalChecked;
+
+      const handleChange = () => {
+        const newValue = !isChecked;
+        if (controlledChecked === undefined) {
+          setInternalChecked(newValue);
+        }
+        onChange?.(newValue);
+      };
+
+      return (
+        <label
+          className={`flex items-start gap-3 cursor-pointer select-none ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`}
+        >
+          <button
+            type="button"
+            role="switch"
+            aria-checked={isChecked}
+            disabled={disabled}
+            onClick={handleChange}
+            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+              isChecked ? "bg-blue-600" : "bg-gray-200"
+            } ${disabled ? "cursor-not-allowed" : "cursor-pointer"}`}
+          >
+            <span
+              className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                isChecked ? "translate-x-6" : "translate-x-1"
+              }`}
+            />
+          </button>
+          {(label || description) && (
+            <div>
+              {label && (
+                <span className={`block text-base font-semibold ${disabled ? "text-gray-400" : "text-gray-900"}`}>
+                  {label}
+                </span>
+              )}
+              {description && (
+                <span className="block text-sm text-gray-400 mt-1">{description}</span>
+              )}
+            </div>
+          )}
+        </label>
+      );
+    };
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `SwitchToggle.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `SwitchToggle.tsx` file.
+  </StepItem>
+
+  <StepItem title="Use the Component">
+    The SwitchToggle component can be used in two ways:
+
+    1. Uncontrolled (with internal state):
+    ```tsx
+    <SwitchToggle
+      label="Enable notifications"
+      description="Receive notifications about new updates"
+    />
+    ```
+
+    2. Controlled (with external state):
+    ```tsx
+    const [isEnabled, setIsEnabled] = useState(false);
+    
+    <SwitchToggle
+      label="Enable notifications"
+      description="Receive notifications about new updates"
+      checked={isEnabled}
+      onChange={setIsEnabled}
+    />
+    ```
+  </StepItem>
+</Step>
+
+## Props
+
+| Prop        | Type      | Description                                      |
+|-------------|-----------|--------------------------------------------------|
+| label       | string    | Optional label text displayed next to the switch  |
+| description | string    | Optional description below the label              |
+| checked     | boolean   | Optional controlled checked state                 |
+| disabled    | boolean   | Whether the switch is disabled                    |
+| onChange    | function  | Callback when the checked state changes           |
+| className   | string    | Optional additional class names for styling       |
+
+## Examples
+
+### Disabled State
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <SwitchToggle
+        label="Disabled Switch"
+        description="This switch is disabled and cannot be toggled"
+        checked={false}
+        disabled={true}
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <SwitchToggle
+      label="Disabled Switch"
+      description="This switch is disabled and cannot be toggled"
+      checked={false}
+      disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+### Controlled State Example
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <SwitchToggle
+        label="Controlled Switch"
+        description="This switch is controlled by parent state"
+        checked={true}
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    const [isEnabled, setIsEnabled] = useState(true);
+    
+    <SwitchToggle
+      label="Controlled Switch"
+      description="This switch is controlled by parent state"
+      checked={isEnabled}
+      onChange={setIsEnabled}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+<br />
+<br />
+_Last updated: June 2025_
+

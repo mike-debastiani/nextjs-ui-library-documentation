@@ -40,12 +40,12 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         checked={isChecked}
         disabled={disabled}
         onChange={handleChange}
-        className="mt-1 h-6 w-6 rounded border border-gray-300 bg-white checked:bg-black checked:border-black focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:border-gray-200 transition-all"
+        className="mt-1 h-4 w-4 rounded border border-gray-300 bg-white checked:bg-black checked:border-black focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:border-gray-200 transition-all"
       />
       <div>
-        <span className={`block text-lg font-semibold ${disabled ? "text-gray-400" : "text-gray-900"}`}>{label}</span>
+        <span className={`block text-base font-semibold ${disabled ? "text-gray-400" : "text-gray-900"}`}>{label}</span>
         {description && (
-          <span className="block text-base text-gray-400 mt-1">{description}</span>
+          <span className="block text-sm text-gray-400 mt-1">{description}</span>
         )}
       </div>
     </label>

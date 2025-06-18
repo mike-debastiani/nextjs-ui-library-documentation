@@ -1,0 +1,147 @@
+---
+title: TextArea
+description: A multi-line text input field.
+keywords: ["components", "ui-library", "inputs", "textarea", "mdx", "nextjs", "documents"]
+---
+
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { TextArea } from "@/components/ui-library/TextArea"
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <TextArea
+        id="message"
+        label="Message"
+        placeholder="Enter your message here..."
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    "use client";
+
+    import React from "react";
+
+    interface TextAreaProps {
+      id: string;
+      label: string;
+      placeholder?: string;
+      value?: string;
+      onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+      disabled?: boolean;
+      rows?: number;
+      className?: string;
+    }
+
+    export const TextArea: React.FC<TextAreaProps> = ({
+      id,
+      label,
+      placeholder,
+      value,
+      onChange,
+      disabled = false,
+      rows = 4,
+      className = "",
+    }) => {
+      return (
+        <div className="flex flex-col space-y-1">
+          <label htmlFor={id} className="text-sm font-medium text-gray-700">
+            {label}
+          </label>
+          <textarea
+            id={id}
+            placeholder={placeholder}
+            value={value}
+            onChange={onChange}
+            disabled={disabled}
+            rows={rows}
+            className={`rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:bg-gray-100 ${className}`}
+          />
+        </div>
+      );
+    };
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `TextArea.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `TextArea.tsx` file.
+  </StepItem>
+
+  <StepItem title="Use the Component">
+    Use the TextArea component in your code with the desired props:
+    ```tsx
+    <TextArea
+      id="message"
+      label="Message"
+      placeholder="Enter your message here..."
+    />
+    ```
+  </StepItem>
+</Step>
+
+## Props
+
+| Prop | Type | Description |
+|------|------|-------------|
+| id | string | Unique identifier for the textarea |
+| label | string | Label text displayed above the textarea |
+| placeholder | string | Placeholder text shown when textarea is empty |
+| value | string | Controlled textarea value |
+| onChange | function | Callback function when textarea value changes |
+| disabled | boolean | Whether the textarea is disabled |
+| rows | number | Number of visible text lines (default: 4) |
+| className | string | Additional CSS classes to apply |
+
+## Examples
+
+### Disabled State
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <TextArea
+        id="message"
+        label="Message"
+        placeholder="Enter your message here..."
+        disabled={true}
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <TextArea
+      id="message"
+      label="Message"
+      placeholder="Enter your message here..."
+      disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+<br />
+<br />
+_Last updated: June 2025_

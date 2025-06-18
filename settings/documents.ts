@@ -39,8 +39,12 @@ export const Documents: Paths[] = [
         href: "/select-dropdown",
       },
       {
-        title: "Switch Toggle",
+        title: "Switch",
         href: "/switch-toggle",
+      },
+      {
+        title: "Textarea",
+        href: "/textarea",
       },
     ],
   },

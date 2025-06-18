@@ -64,7 +64,7 @@ export const SelectDropdown: React.FC<SelectDropdownProps> = ({
     <div className={`relative w-72 ${className}`} ref={ref}>
       <button
         type="button"
-        className="w-full flex items-center justify-between px-5 py-3 bg-white border border-gray-200 rounded-xl shadow-sm text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+        className="w-full flex items-center justify-between px-5 py-3 bg-white border border-gray-200 rounded-lg shadow-sm text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
         aria-expanded={open}
@@ -77,7 +77,7 @@ export const SelectDropdown: React.FC<SelectDropdownProps> = ({
         </svg>
       </button>
       {open && (
-        <div className="absolute z-10 mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg py-2 animate-fade-in">
+        <div className="absolute z-10 mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg py-2 animate-fade-in">
           {groups.map((group, idx) => (
             <div key={group.groupLabel + idx}>
               <div className="px-5 pt-2 pb-2 text-sm text-gray-400 font-semibold select-none">

@@ -39,7 +39,7 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
         onChange={() => onChange?.(value)}
         className="h-5 w-5 accent-blue-600 focus:ring-blue-500"
       />
-      <span className="text-sm text-gray-800">{label}</span>
+      <span className="text-base text-gray-800">{label}</span>
     </label>
   );
 };
