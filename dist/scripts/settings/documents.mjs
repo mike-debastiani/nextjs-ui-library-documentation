@@ -37,8 +37,12 @@ export const Documents = [
                 href: "/select-dropdown",
             },
             {
-                title: "Switch Toggle",
+                title: "Switch",
                 href: "/switch-toggle",
+            },
+            {
+                title: "Textarea",
+                href: "/textarea",
             },
         ],
     },

@@ -606,19 +606,28 @@
   },
   {
     "slug": "/ui-components/form-controls/switch-toggle",
-    "title": "Switch Toggle",
-    "description": "How to build our your documents menu and navigations.",
-    "content": "",
+    "title": "Switch",
+    "description": "A toggle switch component that allows users to turn an option on or off.",
+    "content": "import { SwitchToggle } from \"@/components/ui-library/SwitchToggle\"\nimport { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop        | Type      | Description                                      |\n|-------------|-----------|--------------------------------------------------|\n| label       | string    | Optional label text displayed next to the switch  |\n| description | string    | Optional description below the label              |\n| checked     | boolean   | Optional controlled checked state                 |\n| disabled    | boolean   | Whether the switch is disabled                    |\n| onChange    | function  | Callback when the checked state changes           |\n| className   | string    | Optional additional class names for styling       |\n\n## Examples\n\n### Disabled State\n\n### Controlled State Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "import switchtoggle from components ui-library switchtoggle import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------------- ----------- --------------------------------------------------label string optional label text displayed next to the switchdescription string optional description below the labelchecked boolean optional controlled checked statedisabled boolean whether the switch is disabledonchange function callback when the checked state changesclassname string optional additional class names for styling examples disabled state controlled state example br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Examples"
+      ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
+        "components",
+        "ui-library",
+        "inputs",
+        "switch",
+        "toggle",
         "mdx",
         "nextjs",
-        "documents"
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Examples"
       ]
     }
   },
@@ -639,6 +648,32 @@
         "ui-library",
         "inputs",
         "text-input",
+        "mdx",
+        "nextjs",
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Examples"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/form-controls/textarea",
+    "title": "TextArea",
+    "description": "A multi-line text input field.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { TextArea } from \"@/components/ui-library/TextArea\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the textarea |\n| label | string | Label text displayed above the textarea |\n| placeholder | string | Placeholder text shown when textarea is empty |\n| value | string | Controlled textarea value |\n| onChange | function | Callback function when textarea value changes |\n| disabled | boolean | Whether the textarea is disabled |\n| rows | number | Number of visible text lines (default: 4) |\n| className | string | Additional CSS classes to apply |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import textarea from components ui-library textarea setup usage props prop type description------ ------ -------------id string unique identifier for the textarealabel string label text displayed above the textareaplaceholder string placeholder text shown when textarea is emptyvalue string controlled textarea valueonchange function callback function when textarea value changesdisabled boolean whether the textarea is disabledrows number number of visible text lines default: 4 classname string additional css classes to apply examples disabled state br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Examples"
+      ],
+      "keywords": [
+        "components",
+        "ui-library",
+        "inputs",
+        "textarea",
         "mdx",
         "nextjs",
         "documents",
