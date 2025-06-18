@@ -480,6 +480,102 @@
     }
   },
   {
+    "slug": "/ui-components/feedback-status/alerts",
+    "title": "Alerts",
+    "description": "Display important messages and notifications to users with different severity levels.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Alert } from \"@/components/ui-library/Alert\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| title | string | The main alert message (required) |\n| description | string | Additional descriptive text (optional) |\n| variant | \"default\" | \"success\" | \"destructive\" | Visual style variant (default: \"default\") |\n| className | string | Additional CSS classes to apply |\n\n## Variants\n\nThe Alert component supports three different variants to convey different types of messages:\n\n### Default Alert\n\n### Success Alert\n\n### Destructive Alert\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import alert from components ui-library alert setup usage props prop type description------ ------ -------------title string the main alert message required description string additional descriptive text optional variant default success destructive visual style variant default: default classname string additional css classes to apply variants the alert component supports three different variants to convey different types of messages: default alert success alert destructive alert br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props",
+        "Variants"
+      ],
+      "keywords": [
+        "components",
+        "ui-library",
+        "alerts",
+        "notifications",
+        "feedback",
+        "mdx",
+        "nextjs",
+        "documents",
+        "Setup & Usage",
+        "Props",
+        "Variants"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/feedback-status/badges",
+    "title": "Badges",
+    "description": "Display status indicators, labels, and small pieces of information with different visual styles.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Badge } from \"@/components/ui-library/Badge\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| children | React.ReactNode | The content to display inside the badge (required) |\n| variant | \"default\" | \"secondary\" | \"destructive\" | \"outline\" | \"blue\" | Visual style variant (default: \"default\") |\n| className | string | Additional CSS classes to apply |\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import badge from components ui-library badge setup usage props prop type description------ ------ -------------children react reactnode the content to display inside the badge required variant default secondary destructive outline blue visual style variant default: default classname string additional css classes to apply br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props"
+      ],
+      "keywords": [
+        "components",
+        "ui-library",
+        "badges",
+        "labels",
+        "status",
+        "feedback",
+        "mdx",
+        "nextjs",
+        "documents",
+        "Setup & Usage",
+        "Props"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/feedback-status",
+    "title": "UI Components",
+    "description": "How to build our your documents menu and navigations.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "navigation",
+        "sidebar",
+        "menus",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/feedback-status/tooltips",
+    "title": "Tooltips",
+    "description": "Display contextual information when users hover over elements.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Tooltip } from \"@/components/ui-library/Tooltip\"\nimport { Button } from \"@/components/ui/button\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| children | React.ReactNode | The element that triggers the tooltip (required) |\n| content | string | The text content to display in the tooltip (required) |\n| delay | number | Delay in milliseconds before showing/hiding the tooltip (default: 200) |\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import tooltip from components ui-library tooltip import button from components ui button setup usage props prop type description------ ------ -------------children react reactnode the element that triggers the tooltip required content string the text content to display in the tooltip required delay number delay in milliseconds before showing hiding the tooltip default: 200 br br last updated: june 2025",
+      "headings": [
+        "Setup & Usage",
+        "Props"
+      ],
+      "keywords": [
+        "components",
+        "ui-library",
+        "tooltips",
+        "hover",
+        "feedback",
+        "mdx",
+        "nextjs",
+        "documents",
+        "Setup & Usage",
+        "Props"
+      ]
+    }
+  },
+  {
     "slug": "/ui-components/form-controls/button",
     "title": "Button",
     "description": "Displays a button or a component that looks like a button.",
