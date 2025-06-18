@@ -1,0 +1,97 @@
+---
+title: Badges
+description: Display status indicators, labels, and small pieces of information with different visual styles.
+keywords: ["components", "ui-library", "badges", "labels", "status", "feedback", "mdx", "nextjs", "documents"]
+---
+
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { Badge } from "@/components/ui-library/Badge"
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white px-4 py-6 flex items-center">
+      <div className="w-full max-w-[50%] space-y-3">
+        <div className="flex flex-wrap gap-2">
+          <Badge>Default</Badge>
+          <Badge variant="secondary">Secondary</Badge>
+          <Badge variant="destructive">Destructive</Badge>
+          <Badge variant="outline">Outline</Badge>
+          <Badge variant="blue">Blue</Badge>
+        </div>
+      </div>
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    import React from "react";
+    import clsx from "clsx";
+
+    type BadgeVariant = "default" | "secondary" | "destructive" | "outline" | "blue";
+
+    interface BadgeProps {
+      children: React.ReactNode;
+      variant?: BadgeVariant;
+      className?: string;
+    }
+
+    const baseStyles = "inline-flex items-center rounded-full px-3 py-1 text-sm font-medium transition-colors";
+
+    const variantStyles: Record<BadgeVariant, string> = {
+      default: "bg-black text-white",
+      secondary: "bg-gray-100 text-black",
+      destructive: "bg-red-600 text-white",
+      outline: "border border-gray-300 text-black bg-white",
+      blue: "bg-blue-600 text-white",
+    };
+
+    export const Badge: React.FC<BadgeProps> = ({
+      children,
+      variant = "default",
+      className,
+    }) => {
+      return (
+        <span className={clsx(baseStyles, variantStyles[variant], className)}>
+          {children}
+        </span>
+      );
+    };
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `Badge.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `Badge.tsx` file.
+  </StepItem>
+
+  <StepItem title="Use the Component">
+    Use the Badge component in your code with the desired props:
+    ```tsx
+    <Badge variant="default">Status</Badge>
+    ```
+  </StepItem>
+</Step>
+
+## Props
+
+| Prop | Type | Description |
+|------|------|-------------|
+| children | React.ReactNode | The content to display inside the badge (required) |
+| variant | "default" \| "secondary" \| "destructive" \| "outline" \| "blue" | Visual style variant (default: "default") |
+| className | string | Additional CSS classes to apply |
+
+<br />
+<br />
+_Last updated: June 2025_

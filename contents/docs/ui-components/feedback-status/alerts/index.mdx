@@ -1,0 +1,207 @@
+---
+title: Alerts
+description: Display important messages and notifications to users with different severity levels.
+keywords: ["components", "ui-library", "alerts", "notifications", "feedback", "mdx", "nextjs", "documents"]
+---
+
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { Alert } from "@/components/ui-library/Alert"
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-full border rounded-md bg-white px-4 py-8 flex items-center">
+      <div className="w-full max-w-[50%] space-y-4">
+        <Alert
+          title="Default Alert"
+          description="This is a default alert message with some additional information."
+        />
+        <Alert
+          title="Success Alert"
+          description="Your action was completed successfully!"
+          variant="success"
+        />
+        <Alert
+          title="Error Alert"
+          description="Something went wrong. Please try again."
+          variant="destructive"
+        />
+      </div>
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    "use client";
+
+    import React from "react";
+
+    type AlertVariant = "default" | "success" | "destructive";
+
+    interface AlertProps {
+      title: string;
+      description?: string;
+      variant?: AlertVariant;
+      className?: string;
+    }
+
+    const variantStyles: Record<AlertVariant, string> = {
+      default: "bg-gray-100 text-gray-800 border border-gray-300",
+      success: "bg-green-100 text-green-800 border border-green-300",
+      destructive: "bg-red-100 text-red-800 border border-red-300",
+    };
+
+    export const Alert: React.FC<AlertProps> = ({
+      title,
+      description,
+      variant = "default",
+      className = "",
+    }) => {
+      return (
+        <div
+          className={`w-full rounded-md px-4 py-3 ${variantStyles[variant]} ${className}`}
+          role="alert"
+        >
+          <p className="font-semibold">{title}</p>
+          {description && <p className="text-sm mt-1">{description}</p>}
+        </div>
+      );
+    };
+
+    export default Alert;
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Setup & Usage
+
+<Step>
+  <StepItem title="Create a new Component">
+    Create a new component in the `@/components/ui-library` directory with the file name `Alert.tsx`.
+  </StepItem>
+
+  <StepItem title="Copy the Full Code inside the component">
+    Copy the full code from the "Full Code" tab above and paste it into the `Alert.tsx` file.
+  </StepItem>
+
+  <StepItem title="Use the Component">
+    Use the Alert component in your code with the desired props:
+    ```tsx
+    <Alert
+      title="Important Notice"
+      description="This is an important message for users."
+      variant="default"
+    />
+    ```
+  </StepItem>
+</Step>
+
+## Props
+
+| Prop | Type | Description |
+|------|------|-------------|
+| title | string | The main alert message (required) |
+| description | string | Additional descriptive text (optional) |
+| variant | "default" \| "success" \| "destructive" | Visual style variant (default: "default") |
+| className | string | Additional CSS classes to apply |
+
+## Variants
+
+The Alert component supports three different variants to convey different types of messages:
+
+### Default Alert
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <Alert
+        title="Information"
+        description="This is a default alert with general information."
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <Alert
+      title="Information"
+      description="This is a default alert with general information."
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+### Success Alert
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <Alert
+        title="Success!"
+        description="Your profile has been updated successfully."
+        variant="success"
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <Alert
+      title="Success!"
+      description="Your profile has been updated successfully."
+      variant="success"
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+### Destructive Alert
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <Alert
+        title="Error"
+        description="Failed to save changes. Please try again."
+        variant="destructive"
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <Alert
+      title="Error"
+      description="Failed to save changes. Please try again."
+      variant="destructive"
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+
+<br />
+<br />
+_Last updated: June 2025_

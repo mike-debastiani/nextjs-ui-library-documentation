@@ -14,6 +14,9 @@ import { RadioButton } from "@/components/ui-library/RadioButton"
 import { SelectDropdown } from "@/components/ui-library/SelectDropdown"
 import { SwitchToggle } from "@/components/ui-library/SwitchToggle"
 import { TextArea } from "@/components/ui-library/TextArea"
+import { Alert } from "@/components/ui-library/Alert"
+import { Badge } from "@/components/ui-library/Badge"
+import { Tooltip } from "@/components/ui-library/Tooltip"
 
 export const components = {
   a: RoutedLink,
@@ -38,4 +41,7 @@ export const components = {
   SelectDropdown,
   SwitchToggle,
   TextArea,
+  Alert,
+  Badge,
+  Tooltip,
 }

@@ -23,10 +23,6 @@ export const Documents: Paths[] = [
         href: "/button",
       },
       {
-        title: "Text Input",
-        href: "/text-input",
-      },
-      {
         title: "Checkbox",
         href: "/checkbox",
       },
@@ -43,8 +39,30 @@ export const Documents: Paths[] = [
         href: "/switch-toggle",
       },
       {
+        title: "Text Input",
+        href: "/text-input",
+      },
+      {
         title: "Textarea",
         href: "/textarea",
+      },
+    ],
+  },
+  {
+    title: "Feedback & Status",
+    href: "/ui-components/feedback-status",
+    items: [
+      {
+        title: "Alerts",
+        href: "/alerts",
+      },
+      {
+        title: "Badges",
+        href: "/badges",
+      },
+      {
+        title: "Tooltips",
+        href: "/tooltips",
       },
     ],
   },
@@ -70,90 +88,4 @@ export const Documents: Paths[] = [
         },
     ],
   },
-  {
-    spacer: true,
-  },
-  {
-    heading: "Documentation",
-    title: "Basic Setup",
-    href: "/basic-setup",
-    items: [
-      {
-        title: "Installation",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
-      },
-      {
-        title: "Changelog",
-        href: "/changelog",
-      },
-    ],
-  },
-  {
-    title: "Markdown Components",
-    href: "/markdown",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },
-  {
-     title: "Structure",
-     href: "/structure",
-     items: [
-       {
-         title: "Deep",
-         href: "/deep",
-         items: [
-           {
-             title: "Deeper",
-             href: "/deeper",
-             items: [
-               {
-                 title: "Even deeper",
-                 href: "/even-deeper",
-               },
-             ],
-           },
-         ],
-       },
-     ],
-   },
 ]
