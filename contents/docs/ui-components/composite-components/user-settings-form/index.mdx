@@ -29,7 +29,6 @@ import { UserSettingsForm } from "@/components/ui-library/UserSettingsForm"
     import { SelectDropdown } from "@/components/ui-library/SelectDropdown";
     import { RadioButton } from "@/components/ui-library/RadioButton";
     import { SwitchToggle } from "@/components/ui-library/SwitchToggle";
-    import { Checkbox } from "@/components/ui-library/Checkbox";
     import { Button } from "@/components/ui/button";
     import { Alert } from "@/components/ui-library/Alert";
 
@@ -44,8 +43,9 @@ import { UserSettingsForm } from "@/components/ui-library/UserSettingsForm"
       const [email, setEmail] = useState("");
       const [language, setLanguage] = useState<string | undefined>(undefined);
       const [gender, setGender] = useState<string>("");
-      const [newsletter, setNewsletter] = useState(false);
-      const [privacy, setPrivacy] = useState(false);
+      const [publicProfile, setPublicProfile] = useState(false);
+      const [twoFactorAuth, setTwoFactorAuth] = useState(false);
+      const [shareLocation, setShareLocation] = useState(false);
       const [submitted, setSubmitted] = useState(false);
 
       const handleSubmit = (e: React.FormEvent) => {
@@ -55,7 +55,7 @@ import { UserSettingsForm } from "@/components/ui-library/UserSettingsForm"
       };
 
       return (
-        <div className="max-w-lg w-full bg-white rounded-xl shadow-lg px-8 py-8 border border-gray-200">
+        <div className="max-w-lg w-full bg-white rounded-xl shadow-lg px-8 pb-6 pt-0 border border-gray-200 [&_.font-semibold]:font-normal [&_.text-base]:text-sm">
           <h3 className="text-xl font-bold mb-2">User Settings</h3>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <TextInput
@@ -85,7 +85,7 @@ import { UserSettingsForm } from "@/components/ui-library/UserSettingsForm"
             </div>
             <div>
               <label className="text-sm font-medium mb-1 block">Gender</label>
-              <div className="flex gap-6 mt-1">
+              <div className="flex gap-6 mt-2">
                 <RadioButton
                   id="gender-male"
                   name="gender"
@@ -112,16 +112,25 @@ import { UserSettingsForm } from "@/components/ui-library/UserSettingsForm"
                 />
               </div>
             </div>
+            <label className="text- font-medium mb-3 block">Privacy & Security</label>
             <SwitchToggle
-              label="Subscribe to newsletter"
-              checked={newsletter}
-              onChange={setNewsletter}
+              label="Make profile public"
+              description=""
+              checked={publicProfile}
+              onChange={setPublicProfile}
+              className="mb-4"
             />
-            <Checkbox
-              label="Accept Privacy Policy"
-              description="You must accept our privacy policy to continue."
-              checked={privacy}
-              onChange={setPrivacy}
+            <SwitchToggle
+              label="Enable two-factor authentication"
+              checked={twoFactorAuth}
+              onChange={setTwoFactorAuth}
+              className="mb-4"
+            />
+            <SwitchToggle
+              label="Share location"
+              checked={shareLocation}
+              onChange={setShareLocation}
+              className="mb-4"
             />
             <Button type="submit" className="w-full mt-2" variant="default">
               Save Settings

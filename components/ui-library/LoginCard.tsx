@@ -9,13 +9,13 @@ export const LoginCard: React.FC = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="max-w-md w-full bg-white rounded-xl shadow-lg px-8 py-6 border border-gray-200">
+    <div className="max-w-md w-full bg-white rounded-xl shadow-lg px-8 pb-6 pt-0 border border-gray-200">
       <div className="flex justify-between items-start mb-4">
         <div>
           <h3 className="text-xl font-bold">Login to your account</h3>
           <p className="text-gray-400 text-base mt-1">Enter your email below to login to your account</p>
         </div>
-        <Button type="button" variant="link" className="p-0">Sign Up</Button>
+        <Button type="button" variant="link" className="mt-5 p-0">Sign Up</Button>
       </div>
       <form className="space-y-7">
         <div className="space-y-4">

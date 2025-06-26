@@ -41,7 +41,6 @@ export function Navbar() {
                 <LuGithub className="h-[1.1rem] w-[1.1rem]" />
               </Link>
             )}
-            <ModeToggle />
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ export const UserSettingsForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-lg w-full bg-white rounded-xl shadow-lg px-8 pb-6 pt-0 border border-gray-200">
+    <div className="max-w-lg w-full bg-white rounded-xl shadow-lg px-8 pb-6 pt-0 border border-gray-200 [&_.font-semibold]:font-normal [&_.text-base]:text-sm">
       <h3 className="text-xl font-bold mb-2">User Settings</h3>
       <form className="space-y-6" onSubmit={handleSubmit}>
         <TextInput
@@ -61,7 +61,7 @@ export const UserSettingsForm: React.FC = () => {
         </div>
         <div>
           <label className="text-sm font-medium mb-1 block">Gender</label>
-          <div className="flex gap-6 mt-1">
+          <div className="flex gap-6 mt-2">
             <RadioButton
               id="gender-male"
               name="gender"
@@ -88,9 +88,10 @@ export const UserSettingsForm: React.FC = () => {
             />
           </div>
         </div>
-        <label className="text- font-medium mb-2 block">Privacy & Security</label>
+        <label className="text- font-medium mb-3 block">Privacy & Security</label>
         <SwitchToggle
           label="Make profile public"
+          description=""
           checked={publicProfile}
           onChange={setPublicProfile}
           className="mb-4"
