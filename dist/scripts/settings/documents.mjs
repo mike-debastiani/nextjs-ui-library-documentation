@@ -69,20 +69,16 @@ export const Documents = [
         href: "/ui-components/composite-components",
         items: [
             {
-                title: "Login Form",
-                href: "/login-form",
+                title: "Login Card",
+                href: "/login-card",
             },
             {
                 title: "Newsletter Signup",
                 href: "/newsletter-signup",
             },
             {
-                title: "Contact Form",
-                href: "/contact-form",
-            },
-            {
-                title: "Date Picker",
-                href: "/date-picker",
+                title: "User Settings Form",
+                href: "/user-settings-form",
             },
         ],
     },

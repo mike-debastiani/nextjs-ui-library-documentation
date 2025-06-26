@@ -480,6 +480,69 @@
     }
   },
   {
+    "slug": "/ui-components/composite-components/login-card",
+    "title": "Login Card",
+    "description": "A card component for user login.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { LoginCard } from \"@/components/ui-library/LoginCard\"\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import logincard from components ui-library logincard br br last updated: june 2025",
+      "headings": [],
+      "keywords": [
+        "components",
+        "ui-library",
+        "login",
+        "card",
+        "auth",
+        "composite",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/composite-components/newsletter-signup",
+    "title": "Newsletter Signup",
+    "description": "A card component for newsletter signup.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { NewsletterSignup } from \"@/components/ui-library/NewsletterSignup\"\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import newslettersignup from components ui-library newslettersignup br br last updated: june 2025",
+      "headings": [],
+      "keywords": [
+        "components",
+        "ui-library",
+        "login",
+        "card",
+        "auth",
+        "composite",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
+    "slug": "/ui-components/composite-components/user-settings-form",
+    "title": "User Settings Form",
+    "description": "A composite form for user profile and preferences, using your own UI library components.",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { UserSettingsForm } from \"@/components/ui-library/UserSettingsForm\"\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "_searchMeta": {
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import usersettingsform from components ui-library usersettingsform br br last updated: june 2025",
+      "headings": [],
+      "keywords": [
+        "components",
+        "ui-library",
+        "user settings",
+        "form",
+        "profile",
+        "composite",
+        "mdx",
+        "nextjs",
+        "documents"
+      ]
+    }
+  },
+  {
     "slug": "/ui-components/feedback-status/alerts",
     "title": "Alerts",
     "description": "Display important messages and notifications to users with different severity levels.",
@@ -675,7 +738,7 @@
   {
     "slug": "/ui-components/form-controls/select-dropdown",
     "title": "Select Dropdown",
-    "description": "Displays a list of options for the user to pick from—triggered by a button.",
+    "description": "Displays a list of options for the user to pick from, triggered by a button.",
     "content": "import { SelectDropdown } from \"@/components/ui-library/SelectDropdown\"\nimport { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| placeholder | string | Text shown when no option is selected |\n| groups | `Array<{ groupLabel: string, options: Array<{ label: string, value: string }> }>` | Array of option groups to display in the dropdown |\n| value | string | Controlled value of the selected option |\n| onChange | function | Callback when an option is selected |\n| className | string | Additional CSS classes to apply |\n\n## Examples\n\n### Multiple Groups Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import selectdropdown from components ui-library selectdropdown import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------placeholder string text shown when no option is selectedgroups array grouplabel: string options: array label: string value: string array of option groups to display in the dropdownvalue string controlled value of the selected optiononchange function callback when an option is selectedclassname string additional css classes to apply examples multiple groups example br br last updated: june 2025",
@@ -731,9 +794,9 @@
     "slug": "/ui-components/form-controls/text-input",
     "title": "Text Inputs",
     "description": "Displays a form input field or a component that looks like an input field.",
-    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the input field |\n| label | string | Label text displayed above the input |\n| placeholder | string | Placeholder text shown when input is empty |\n| value | string | Controlled input value |\n| onChange | function | Callback function when input value changes |\n| disabled | boolean | Whether the input is disabled |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
+    "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the input field |\n| label | string | Label text displayed above the input |\n| placeholder | string | Placeholder text shown when input is empty |\n| value | string | Controlled input value |\n| onChange | function | Callback function when input value changes |\n| disabled | boolean | Whether the input is disabled |\n| type | string | The input type (e.g., \"text\", \"password\", \"email\"). Default is \"text\". |\n\n## Examples\n\n### Disabled State\n\n### Password Field\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
-      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------id string unique identifier for the input fieldlabel string label text displayed above the inputplaceholder string placeholder text shown when input is emptyvalue string controlled input valueonchange function callback function when input value changesdisabled boolean whether the input is disabled examples disabled state br br last updated: june 2025",
+      "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------id string unique identifier for the input fieldlabel string label text displayed above the inputplaceholder string placeholder text shown when input is emptyvalue string controlled input valueonchange function callback function when input value changesdisabled boolean whether the input is disabledtype string the input type e g text password email default is text examples disabled state password field br br last updated: june 2025",
       "headings": [
         "Setup & Usage",
         "Props",
