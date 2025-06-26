@@ -8,7 +8,7 @@ import Anchor from "@/components/navigation/anchor"
 // import { Logo } from "@/components/navigation/logo"
 import Search from "@/components/navigation/search"
 import { SheetLeft } from "@/components/navigation/sidebar"
-import { ModeToggle } from "@/components/navigation/theme-toggle"
+//import { ModeToggle } from "@/components/navigation/theme-toggle"
 
 export function Navbar() {
   return (
