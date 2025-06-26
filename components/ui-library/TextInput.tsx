@@ -12,6 +12,7 @@ type TextInputProps = {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
   className?: string;
+  type?: string;
 };
 
 export const TextInput: React.FC<TextInputProps> = ({
@@ -22,6 +23,7 @@ export const TextInput: React.FC<TextInputProps> = ({
   onChange,
   disabled = false,
   className,
+  type = "text",
 }) => {
   return (
     <div className={cn("flex flex-col space-y-1", className)}>
@@ -29,7 +31,7 @@ export const TextInput: React.FC<TextInputProps> = ({
         {label}
       </label>
       <input
-        type="text"
+        type={type}
         id={id}
         placeholder={placeholder}
         value={value}

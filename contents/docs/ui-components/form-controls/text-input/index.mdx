@@ -34,6 +34,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
       value?: string;
       onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
       disabled?: boolean;
+      type?: string;
     };
 
     export const TextInput: React.FC<TextInputProps> = ({
@@ -43,6 +44,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
       value,
       onChange,
       disabled = false,
+      type = "text",
     }) => {
       return (
         <div className="flex flex-col space-y-1">
@@ -50,7 +52,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
             {label}
           </label>
           <input
-            type="text"
+            type={type}
             id={id}
             placeholder={placeholder}
             value={value}
@@ -104,6 +106,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 | value | string | Controlled input value |
 | onChange | function | Callback function when input value changes |
 | disabled | boolean | Whether the input is disabled |
+| type | string | The input type (e.g., "text", "password", "email"). Default is "text". |
 
 ## Examples
 
@@ -133,6 +136,38 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
       label="Username"
       placeholder="Enter your username"
       disabled={true}
+    />
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+### Password Field
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[20rem] border rounded-md bg-white p-4 flex items-center">
+      <TextInput
+        id="password"
+        label="Password"
+        placeholder="Enter your password"
+        type="password"
+        className="w-full max-w-[50%]"
+      />
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    <TextInput
+      id="password"
+      label="Password"
+      placeholder="Enter your password"
+      type="password"
     />
     ```
     </div>

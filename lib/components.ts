@@ -17,6 +17,9 @@ import { TextArea } from "@/components/ui-library/TextArea"
 import { Alert } from "@/components/ui-library/Alert"
 import { Badge } from "@/components/ui-library/Badge"
 import { Tooltip } from "@/components/ui-library/Tooltip"
+import { LoginCard } from "@/components/ui-library/LoginCard"
+import { NewsletterSignup } from "@/components/ui-library/NewsletterSignup"
+import { UserSettingsForm } from "@/components/ui-library/UserSettingsForm"
 
 export const components = {
   a: RoutedLink,
@@ -44,4 +47,7 @@ export const components = {
   Alert,
   Badge,
   Tooltip,
+  LoginCard,
+  NewsletterSignup,
+  UserSettingsForm,
 }

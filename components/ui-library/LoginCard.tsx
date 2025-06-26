@@ -1,0 +1,57 @@
+"use client";
+
+import React, { useState } from "react";
+import { TextInput } from "@/components/ui-library/TextInput";
+import { Button } from "@/components/ui/button";
+
+export const LoginCard: React.FC = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  return (
+    <div className="max-w-md w-full bg-white rounded-xl shadow-lg px-8 py-6 border border-gray-200">
+      <div className="flex justify-between items-start mb-4">
+        <div>
+          <h3 className="text-xl font-bold">Login to your account</h3>
+          <p className="text-gray-400 text-base mt-1">Enter your email below to login to your account</p>
+        </div>
+        <Button type="button" variant="link" className="p-0">Sign Up</Button>
+      </div>
+      <form className="space-y-7">
+        <div className="space-y-4">
+        <TextInput
+          id="email"
+          label="Email"
+          placeholder="m@example.com"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+        />
+        <div>
+          <div className="flex justify-between items-center mb-[4px]">
+            <label htmlFor="password" className="text-sm font-medium">Password</label>
+            <Button type="button" variant="link" size="sm" className="font-normal p-0 m">Forgot your password?</Button>
+          </div>
+          <TextInput
+            id="password"
+            label=""
+            placeholder="password"
+            type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+          />
+        </div>
+        </div>
+        <div className="flex flex-col gap-2">
+        <Button type="submit" className="w-full" variant="default">
+          Login
+        </Button>
+        <Button type="button" className="w-full mb" variant="outline">
+          Login with Google
+        </Button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default LoginCard; 

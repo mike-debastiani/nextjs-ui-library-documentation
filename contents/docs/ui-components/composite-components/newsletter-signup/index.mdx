@@ -1,0 +1,72 @@
+---
+title: Newsletter Signup
+description: A card component for newsletter signup.
+keywords: ["components", "ui-library", "login", "card", "auth", "composite", "mdx", "nextjs", "documents"]
+---
+
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { NewsletterSignup } from "@/components/ui-library/NewsletterSignup"
+
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Full Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview" className="mt-4 justify-center">
+    <div className="justify-center h-[26rem] border rounded-2xl bg-white p-8 flex items-center">
+      <div className="w-full max-w-md">
+        <NewsletterSignup />
+      </div>
+    </div>
+  </TabsContent>
+  <TabsContent value="code" className="mt-4">
+    <div className="[&_pre]:!my-0">
+    ```tsx
+    "use client";
+
+    import React, { useState } from "react";
+    import { TextInput } from "@/components/ui-library/TextInput";
+    import { Button } from "@/components/ui/button";
+
+    export const NewsletterSignup: React.FC = () => {
+      const [email, setEmail] = useState("");
+
+      return (
+        <div className="max-w-md w-full bg-white rounded-xl shadow-lg px-8 py-6 border border-gray-200">
+          <div className="mb-4">
+            <h3 className="text-xl font-bold">Subscribe to our Newsletter</h3>
+            <p className="text-gray-400 text-base mt-1">Get the latest news, articles, and resources, sent to your inbox weekly.</p>
+          </div>
+          <form className="space-y-7">
+            <div className="space-y-4">
+              <TextInput
+                id="newsletter-email"
+                label="Email"
+                placeholder="you@example.com"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <Button type="submit" className="w-full" variant="default">
+                Sign Up
+              </Button>
+            </div>
+          </form>
+        </div>
+      );
+    };
+
+    export default NewsletterSignup;
+    ```
+    </div>
+  </TabsContent>
+</Tabs>
+
+
+<br />
+<br />
+_Last updated: June 2025_
+
+
+
