@@ -2,13 +2,31 @@ import { Paths } from "@/lib/pageroutes"
 
 export const Documents: Paths[] = [
   {
-    heading: "Introduction",
-    title: "Mentoring",
-    href: "/mentoring",
+    heading: "Mentoring Overview",
+    title: "Introduction",
+    href: "/introduction",
   },
   {
-    title: "Concept",
-    href: "/concept",
+    title: "Concept & Goals",
+    href: "/concept-goals",
+  },
+  {
+    title: "Process",
+    href: "/process-documentation",
+    items: [
+      {
+        title: "Learning the Basics",
+        href: "/phase-1",
+      },
+      {
+        title: "Project-Based Learning",
+        href: "/phase-2",
+      },
+    ],
+  },
+  {
+    title: "Conclusion",
+    href: "/conclusion",
   },
   {
     spacer: true,

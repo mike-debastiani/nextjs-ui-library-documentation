@@ -1,0 +1,90 @@
+---
+title: Project-Based Learning
+description: Applying the acquired knowledge in a practical UI component documentation project.
+keywords: ["mentoring", "digital ideation", "next.js", "component library", "ui development", "documents", "javascript", "react"]
+---
+
+<Step>
+
+  <StepItem title="Defining the Documentation Strategy">
+    To kick off this phase, I first researched how existing UI libraries structure and document their components.  
+    
+    I examined popular projects like [shadcn/ui](https://ui.shadcn.com/) and [Radix UI](https://www.radix-ui.com/) to understand best practices for showcasing components clearly and consistently.
+
+    This made it clear to me that I would need a proper documentation page to collect and present my components. While tools like [Storybook](https://storybook.js.org/) were an option, I deliberately chose to build the documentation site myself in order to **maximize the learning effect**.
+  </StepItem>
+
+  <StepItem title="Setting Up the Documentation Website">
+    I selected the [Documents Starter Template](https://vercel.com/templates/documentation/documents-simple-next-js-documentation) by Rubix Studios as the base and started customizing it using **Next.js** and **Tailwind CSS**.
+
+    Initially, the setup was challenging. Navigating through the folder structure, routing logic, and component system felt overwhelming – especially when working with the **App Router** and **TypeScript**.  
+    However, by breaking things down and testing frequently, I managed to adapt the layout and logic to suit my goals.
+
+    The site structure included:
+    - A sidebar with categorized component links
+    - A responsive layout with a header and content area
+    - Pages created via MDX to document each UI component
+  </StepItem>
+
+  <StepItem title="Designing the Page Layout for Components">
+    Once the base was in place, I focused on defining a consistent documentation layout for each component.  
+    
+    Inspired by other libraries, I established the following structure:
+
+    1. **Preview & Code Tabs** – Interactive preview of the component and a tab to view the full TSX + Tailwind code  
+    2. **Setup & Usage** – A guide to create and integrate the component  
+    3. **Props Reference** – Description of available props and how to use them  
+    4. **Examples & Variants** – Practical use cases and alternative versions
+
+    Implementing the tab logic required modifying the existing Tab component in the template. I had to learn how **Client Components** work in Next.js, and how they differ from Server Components – especially for live interaction.
+  </StepItem>
+
+  <StepItem title="Choosing and Categorizing Components">
+    After building the first example page, I planned the full list of components to implement.  
+    
+    I grouped them into three main categories:
+
+    - **Form Controls**: Basic interactive inputs like buttons, checkboxes, and text fields  
+    - **Feedback & Status**: Elements like alerts, badges, and tooltips  
+    - **Composite Components**: Larger UI blocks built from smaller elements, such as login cards or settings forms
+
+    This categorization was inspired by the principles of **Atomic Design** by Brad Frost. Atomic Design proposes a hierarchy from smallest units (atoms like buttons) to more complex organisms and templates.  
+    
+    My structure maps well to this idea, helping me separate concerns and build reusable, modular components. However, my implementation does not strictly follow the atomic structure – for example, some of the so-called "atom" components already include labels or descriptions, which technically makes them closer to molecules.
+  </StepItem>
+
+  <StepItem title="Developing the Form Control Components">
+    I began by implementing components in the "Form Controls" category.  
+    
+    I challenged myself to build each one from scratch using only my current understanding. I used ChatGPT only for specific questions when I was stuck or needed best practices.
+
+    Components developed in this phase included:
+    - Button  
+    - Checkbox  
+    - Radio Button  
+    - Select Dropdown  
+    - Switch  
+    - Text Input  
+    - Textarea  
+  </StepItem>
+
+  <StepItem title="Deploying the Documentation with Vercel">
+    Once I had several components ready, I attempted to deploy the project via [Vercel](https://vercel.com/).  
+    
+    Although everything worked fine locally, I ran into multiple build errors during deployment.
+
+    After hours of debugging and checking imports, I eventually discovered that **a folder with the wrong casing** (e.g. lowercase vs uppercase) was not pushed correctly to GitHub.  
+    This seemingly small issue caused imports to fail on the Vercel build system.
+
+    Once corrected, I was able to deploy a working version of the documentation successfully.
+  </StepItem>
+
+  <StepItem title="Finalizing the Component Library">
+    With the core structure in place and deployment working, I progressively added more components – including those in the Feedback and Composite categories.
+
+    I continued refining the layout, ensuring each component had a full preview, well-documented props, and example usages.  
+    
+    Once I reached a satisfying level of completeness, I considered the learning goals of the mentorship fulfilled.
+  </StepItem>
+
+</Step>
