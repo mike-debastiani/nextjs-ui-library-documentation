@@ -17,12 +17,12 @@ import PageMenu from "@/components/navigation/pagemenu"
 export function Sidebar() {
   return (
     <aside
-      className="sticky top-16 hidden h-[94.5vh] min-w-[230px] flex-[1] flex-col overflow-y-auto md:flex"
+      className="hidden md:block min-w-[230px] flex-[1] h-[calc(100vh-64px)] sticky top-16 overflow-y-auto"
       aria-label="Page navigation"
     >
-      <ScrollArea className="py-4">
+      <div className="py-4">
         <PageMenu />
-      </ScrollArea>
+      </div>
     </aside>
   )
 }
@@ -46,7 +46,7 @@ export function SheetLeft() {
             <Logo />
           </SheetClose>
         </SheetHeader>
-        <ScrollArea className="flex flex-col gap-4">
+        <ScrollArea className="flex flex-col gap-4 h-[calc(100vh-64px)]">
           <div className="mx-0 mt-3 flex flex-col gap-2.5 px-5">
             <NavMenu isSheet />
           </div>
