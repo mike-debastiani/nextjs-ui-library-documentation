@@ -150,6 +150,99 @@
     }
   },
   {
+    "slug": "/concept-goals",
+    "title": "Concept & Goals",
+    "description": "Overview of the idea and objectives behind the mentorship project.",
+    "content": "## Concept\n\nThis mentorship project was designed to help me gain a deeper understanding of frontend development through hands-on experience. While my background lies primarily in UX/UI design, I wanted to close the gap between interface design and technical implementation by working directly with a modern web framework.\n\nThe core idea was to build a **personal UI component library** using **Next.js** and **Tailwind CSS**. By recreating common interface components from existing design systems or Figma libraries, I could both improve my technical skills and develop a deeper appreciation for how UI patterns are implemented in code.\n\nInstead of focusing on a large, fully-featured application, I deliberately chose a **component-based approach**. This allowed me to concentrate on understanding the structure, styling, and behavior of each UI element individually. The goal of this mentorship was not to design a complete interface, but to strengthen my technical frontend skills through focused, hands-on development.\n\n## Goals\n\nThe main goals of this mentorship were:\n\n* To deepen my knowledge of JavaScript, React, and especially Next.js.\n* To practice building reusable frontend components with real-world application.\n* To understand the workflow of modern component-based development.\n* To improve my ability to structure and document a scalable design system.\n* To build a reference library that I can reuse or extend in future projects.\n\nThis focused, hands-on format helped me grow as a designer who codes – and as a developer who designs with purpose.\n",
+    "_searchMeta": {
+      "cleanContent": "concept this mentorship project was designed to help me gain a deeper understanding of frontend development through hands-on experience while my background lies primarily in ux ui design i wanted to close the gap between interface design and technical implementation by working directly with a modern web framework the core idea was to build a personal ui component library using next js and tailwind css by recreating common interface components from existing design systems or figma libraries i could both improve my technical skills and develop a deeper appreciation for how ui patterns are implemented in code instead of focusing on a large fully-featured application i deliberately chose a component-based approach this allowed me to concentrate on understanding the structure styling and behavior of each ui element individually the goal of this mentorship was not to design a complete interface but to strengthen my technical frontend skills through focused hands-on development goals the main goals of this mentorship were: to deepen my knowledge of javascript react and especially next js to practice building reusable frontend components with real-world application to understand the workflow of modern component-based development to improve my ability to structure and document a scalable design system to build a reference library that i can reuse or extend in future projects this focused hands-on format helped me grow as a designer who codes and as a developer who designs with purpose",
+      "headings": [
+        "Concept",
+        "Goals"
+      ],
+      "keywords": [
+        "mentoring",
+        "digital ideation",
+        "next.js",
+        "concept",
+        "goals",
+        "ui development",
+        "documents",
+        "Concept",
+        "Goals",
+        "personal UI component library",
+        "Next.js",
+        "Tailwind CSS",
+        "component-based approach"
+      ]
+    }
+  },
+  {
+    "slug": "/conclusion",
+    "title": "Conclusion",
+    "description": "Reflections and key insights gained throughout the project",
+    "content": "## Learnings\n\nThroughout this mentorship, I gained a deeper understanding of modern frontend development and the technologies that power it.\n\n* **JavaScript Fundamentals**\\\n  Learning JavaScript basics provided a smooth and motivating entry point. It laid a strong foundation and helped me approach more complex topics with confidence.\n\n* **Understanding Frameworks**\\\n  Exploring how modern frameworks like React and Next.js work gave me insight into the structure of today's frontend applications – and showed that each abstraction comes with its own complexity.\n\n* **Component-Based Thinking**\\\n  Building UI components from scratch fostered a more modular and reusable mindset, which benefits both my development practice and my approach to scalable design systems.\n\n* **Broader Technical Awareness**\\\n  While focusing on Next.js and Tailwind CSS, I also engaged with adjacent technologies like JSX, MDX, Git, and GitHub workflows. This broadened my technical vocabulary and made me more confident in using real-world development tools.\n\n## Challenges\n\nAlongside the progress, the project was filled with unexpected hurdles that required flexibility and persistence.\n\n* **Navigating Complexity**\\\n  As I moved beyond the basics, I quickly encountered the depth and intricacy of frameworks like React and Next.js. What first appeared manageable turned out to be a vast ecosystem – and staying focused on what was relevant to this mentorship became a constant balancing act.\n\n* **Shifting from Design to Development**\\\n  Coming from a design-focused background, working with frontend code introduced a new and sometimes overwhelming set of mental models – from component rendering and client/server behavior to TypeScript syntax and build processes.\n\n* **Setup & Debugging Issues**\\\n  Getting the documentation site up and running posed several technical challenges, particularly during deployment via Vercel. What worked locally often failed during build due to small issues like missing imports or case-sensitive file paths. Solving these problems was time-consuming but taught me valuable debugging techniques.\n\n* **Overload of New Concepts**\\\n  To keep the project moving, I had to engage with tools and topics beyond the original scope – including MDX formatting, dynamic routing, and Git workflows. While these may be routine for experienced developers, for me they represented steep, unfamiliar territory.\n\n## Conclusion\n\nThis mentoring project has been a challenging yet rewarding journey into modern frontend development. What began as a desire to broaden my development skills evolved into a structured and hands-on learning process that pushed me well beyond my comfort zone.\n\nBy dividing the project into two phases, I was able to first build a foundational understanding of JavaScript, React, and Next.js, and then apply this knowledge in a practical setting by developing a personal UI component library. This not only helped me internalize technical concepts, but also deepened my understanding of how design and development intersect in real-world applications.\n\nOne of the most valuable takeaways was learning how frontend frameworks work behind the scenes and how interactive components can be documented and reused effectively.\n\nWhile the process wasn’t without obstacles, each challenge led to meaningful growth. I now feel more equipped to communicate with developers, work collaboratively across disciplines, and continue building on this technical foundation. This mentorship has shown me that stepping into new territory, especially with curiosity and commitment, can lead to some of the most impactful learning experiences.\n\nThank you for your support and guidance, Nick!\n",
+    "_searchMeta": {
+      "cleanContent": "learnings throughout this mentorship i gained a deeper understanding of modern frontend development and the technologies that power it javascript fundamentals learning javascript basics provided a smooth and motivating entry point it laid a strong foundation and helped me approach more complex topics with confidence understanding frameworks exploring how modern frameworks like react and next js work gave me insight into the structure of today s frontend applications and showed that each abstraction comes with its own complexity component-based thinking building ui components from scratch fostered a more modular and reusable mindset which benefits both my development practice and my approach to scalable design systems broader technical awareness while focusing on next js and tailwind css i also engaged with adjacent technologies like jsx mdx git and github workflows this broadened my technical vocabulary and made me more confident in using real-world development tools challenges alongside the progress the project was filled with unexpected hurdles that required flexibility and persistence navigating complexity as i moved beyond the basics i quickly encountered the depth and intricacy of frameworks like react and next js what first appeared manageable turned out to be a vast ecosystem and staying focused on what was relevant to this mentorship became a constant balancing act shifting from design to development coming from a design-focused background working with frontend code introduced a new and sometimes overwhelming set of mental models from component rendering and client server behavior to typescript syntax and build processes setup debugging issues getting the documentation site up and running posed several technical challenges particularly during deployment via vercel what worked locally often failed during build due to small issues like missing imports or case-sensitive file paths solving these problems was time-consuming but taught me valuable debugging techniques overload of new concepts to keep the project moving i had to engage with tools and topics beyond the original scope including mdx formatting dynamic routing and git workflows while these may be routine for experienced developers for me they represented steep unfamiliar territory conclusion this mentoring project has been a challenging yet rewarding journey into modern frontend development what began as a desire to broaden my development skills evolved into a structured and hands-on learning process that pushed me well beyond my comfort zone by dividing the project into two phases i was able to first build a foundational understanding of javascript react and next js and then apply this knowledge in a practical setting by developing a personal ui component library this not only helped me internalize technical concepts but also deepened my understanding of how design and development intersect in real-world applications one of the most valuable takeaways was learning how frontend frameworks work behind the scenes and how interactive components can be documented and reused effectively while the process wasn t without obstacles each challenge led to meaningful growth i now feel more equipped to communicate with developers work collaboratively across disciplines and continue building on this technical foundation this mentorship has shown me that stepping into new territory especially with curiosity and commitment can lead to some of the most impactful learning experiences thank you for your support and guidance nick",
+      "headings": [
+        "Learnings",
+        "Challenges",
+        "Conclusion"
+      ],
+      "keywords": [
+        "mentoring",
+        "digital ideation",
+        "next.js",
+        "component library",
+        "learnings",
+        "challenges",
+        "documents",
+        "Learnings",
+        "Challenges",
+        "Conclusion",
+        "JavaScript Fundamentals",
+        "Understanding Frameworks",
+        "Component-Based Thinking",
+        "Broader Technical Awareness",
+        "Navigating Complexity",
+        "Shifting from Design to Development",
+        "Setup & Debugging Issues",
+        "Overload of New Concepts"
+      ]
+    }
+  },
+  {
+    "slug": "/introduction",
+    "title": "Introduction",
+    "description": "Introduction to the project.",
+    "content": "## About me\n\nMy name is **Mike De Bastiani**, and I am currently studying **Digital Ideation** at the Lucerne University of Applied Sciences and Arts.\n\nAt the start of this mentorship, I was in my 4th semester and brought with me an advanced background in **UX/UI design**, along with solid skills in\nHTML, CSS, JavaScript, and Tailwind CSS. While I had some experience with Angular, I had limited exposure to modern frameworks like **React** or **Next.js** – which I was able to explore and expand significantly during this project.\n\nThis project was developed during the **MENT4.FS25** module – a self-directed mentorship format in which students work independently on a project relevant to their field.\n\n*The mentorship was guided by Nick Niles.*\n\n## Motivation\n\nMost of my previous academic and professional work has focused on UX and UI. However, I believe that a more in-depth understanding of frontend development strengthens design quality and bridges the gap between concept and implementation.\n\nTo pursue this goal, I decided to focus on **Next.js** as a modern frontend framework and apply it in a practical setting.\n\n## Project Structure\n\nI approached the mentorship in two main phases.\n\n### What to Expect\n\nIn the following sections of this documentation, I will outline the conceptual background, explain the development process, highlight the key challenges and lessons learned, and conclude with a short reflection on the mentorship experience.\n",
+    "_searchMeta": {
+      "cleanContent": "about me my name is mike de bastiani and i am currently studying digital ideation at the lucerne university of applied sciences and arts at the start of this mentorship i was in my 4th semester and brought with me an advanced background in ux ui design along with solid skills in html css javascript and tailwind css while i had some experience with angular i had limited exposure to modern frameworks like react or next js which i was able to explore and expand significantly during this project this project was developed during the ment4 fs25 module a self-directed mentorship format in which students work independently on a project relevant to their field the mentorship was guided by nick niles motivation most of my previous academic and professional work has focused on ux and ui however i believe that a more in-depth understanding of frontend development strengthens design quality and bridges the gap between concept and implementation to pursue this goal i decided to focus on next js as a modern frontend framework and apply it in a practical setting project structure i approached the mentorship in two main phases what to expect in the following sections of this documentation i will outline the conceptual background explain the development process highlight the key challenges and lessons learned and conclude with a short reflection on the mentorship experience",
+      "headings": [
+        "About me",
+        "Motivation",
+        "Project Structure"
+      ],
+      "keywords": [
+        "mentoring",
+        "digital ideation",
+        "next.js",
+        "component library",
+        "ui development",
+        "documents",
+        "About me",
+        "Motivation",
+        "Project Structure",
+        "Mike De Bastiani",
+        "Digital Ideation",
+        "UX/UI design",
+        "React",
+        "Next.js",
+        "MENT4.FS25"
+      ]
+    }
+  },
+  {
     "slug": "/markdown/cards",
     "title": "Cards",
     "description": "Explore and implement various card styles, including small, large and image cards.",
@@ -366,123 +459,100 @@
     }
   },
   {
-    "slug": "/mentoring",
-    "title": "Mentoring",
-    "description": "How to build our your documents menu and navigations.",
+    "slug": "/process-documentation",
+    "title": "Process",
+    "description": "Overview of the process and documentation of the mentorship.",
+    "content": "The mentorship was structured in two main phases: one focused on building foundational knowledge, and the other centered on applying that knowledge in a practical project.\n\nEach phase followed a clear objective and learning approach, allowing me to progressively build up my skills in frontend development.\n\nIn the following pages, I describe the two phases in more detail and reflect on key challenges and takeaways from the overall learning journey.\n",
+    "_searchMeta": {
+      "cleanContent": "the mentorship was structured in two main phases: one focused on building foundational knowledge and the other centered on applying that knowledge in a practical project each phase followed a clear objective and learning approach allowing me to progressively build up my skills in frontend development in the following pages i describe the two phases in more detail and reflect on key challenges and takeaways from the overall learning journey",
+      "headings": [],
+      "keywords": [
+        "mentoring",
+        "digital ideation",
+        "next.js",
+        "component library",
+        "ui development",
+        "documents",
+        "process",
+        "documentation"
+      ]
+    }
+  },
+  {
+    "slug": "/process-documentation/phase-1",
+    "title": "Learning the Basics",
+    "description": "Deepening my technical foundation in JavaScript, React and Next.js.",
     "content": "",
     "_searchMeta": {
       "cleanContent": "",
       "headings": [],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
-        "mdx",
-        "nextjs",
-        "documents"
+        "mentoring",
+        "digital ideation",
+        "next.js",
+        "component library",
+        "ui development",
+        "documents",
+        "javascript",
+        "react"
       ]
     }
   },
   {
-    "slug": "/structure/deep/deeper/even-deeper",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n",
+    "slug": "/process-documentation/phase-2",
+    "title": "Project-Based Learning",
+    "description": "Applying the acquired knowledge in a practical UI component documentation project.",
+    "content": "",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text",
+      "cleanContent": "",
       "headings": [],
-      "keywords": []
-    }
-  },
-  {
-    "slug": "/structure/deep/deeper",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n\n## Tabs Example\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting tabs example",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ],
       "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ]
-    }
-  },
-  {
-    "slug": "/structure/deep",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n\n## Tabs Example\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting tabs example",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ]
-    }
-  },
-  {
-    "slug": "/structure",
-    "title": "Structure",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "mentoring",
+        "digital ideation",
+        "next.js",
+        "component library",
+        "ui development",
+        "documents",
+        "javascript",
+        "react"
       ]
     }
   },
   {
     "slug": "/ui-components/composite-components",
     "title": "Composite Components",
-    "description": "Description of composite components.",
-    "content": "",
+    "description": "Higher-order components composed of multiple UI elements working together.",
+    "content": "Composite components combine multiple atomic or foundational elements into reusable blocks of functionality. They demonstrate how individual UI components can be orchestrated into meaningful, higher-level patterns that reflect real-world use cases.\n\n## Components Overview\n\n* [Login Card](/docs/ui-components/composite-components/login-card)\n* [Newsletter Signup](/docs/ui-components/composite-components/newsletter-signup)\n* [User Settings Form](/docs/ui-components/composite-components/user-settings-form)\n\n## Why Composite Components Matter\n\nThese components:\n\n* **Show practical integration** – demonstrating how smaller building blocks work together\n* **Support real use cases** – such as authentication, user onboarding, or settings management\n* **Promote consistency** – by reusing predefined styles, behaviors, and interaction patterns\n\nThey bridge the gap between basic components and real-world applications.\n\n## Getting Started\n\nTo include a composite component in your project:\n\n1. Navigate to the component page from the Overview above.\n2. Copy the **Full Code** block into your project.\n3. Ensure all internal components (e.g. `Button`, `Input`, `Checkbox`) are properly imported\n4. Customize the structure or logic as needed to fit your product context\n\nComposite components offer a valuable way to prototype real UI flows with consistent building blocks.\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "composite components combine multiple atomic or foundational elements into reusable blocks of functionality they demonstrate how individual ui components can be orchestrated into meaningful higher-level patterns that reflect real-world use cases components overview login card newsletter signup user settings form why composite components matter these components: show practical integration demonstrating how smaller building blocks work together support real use cases such as authentication user onboarding or settings management promote consistency by reusing predefined styles behaviors and interaction patterns they bridge the gap between basic components and real-world applications getting started to include a composite component in your project: navigate to the component page from the overview above copy the full code block into your project ensure all internal components e g button input checkbox are properly imported customize the structure or logic as needed to fit your product context composite components offer a valuable way to prototype real ui flows with consistent building blocks",
+      "headings": [
+        "Components Overview",
+        "Why Composite Components Matter",
+        "Getting Started"
+      ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
-        "mdx",
-        "nextjs",
-        "documents"
+        "composite components",
+        "ui components",
+        "next.js",
+        "tailwind css",
+        "component library",
+        "Components Overview",
+        "Why Composite Components Matter",
+        "Getting Started",
+        "Show practical integration",
+        "Support real use cases",
+        "Promote consistency",
+        "Full Code",
+        "Button",
+        "Input",
+        "Checkbox"
       ]
     }
   },
   {
     "slug": "/ui-components/composite-components/login-card",
     "title": "Login Card",
-    "description": "A card component for user login.",
+    "description": "A full login form combining input fields and buttons inside a styled card layout.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { LoginCard } from \"@/components/ui-library/LoginCard\"\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import logincard from components ui-library logincard br br last updated: june 2025",
@@ -503,7 +573,7 @@
   {
     "slug": "/ui-components/composite-components/newsletter-signup",
     "title": "Newsletter Signup",
-    "description": "A card component for newsletter signup.",
+    "description": "A call-to-action block allowing users to subscribe via email.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { NewsletterSignup } from \"@/components/ui-library/NewsletterSignup\"\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import newslettersignup from components ui-library newslettersignup br br last updated: june 2025",
@@ -524,7 +594,7 @@
   {
     "slug": "/ui-components/composite-components/user-settings-form",
     "title": "User Settings Form",
-    "description": "A composite form for user profile and preferences, using your own UI library components.",
+    "description": "A settings panel with grouped form controls for user preferences.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { UserSettingsForm } from \"@/components/ui-library/UserSettingsForm\"\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import usersettingsform from components ui-library usersettingsform br br last updated: june 2025",
@@ -545,7 +615,7 @@
   {
     "slug": "/ui-components/feedback-status/alerts",
     "title": "Alerts",
-    "description": "Display important messages and notifications to users with different severity levels.",
+    "description": "Notification boxes for communicating messages like success, error or warnings.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Alert } from \"@/components/ui-library/Alert\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| title | string | The main alert message (required) |\n| description | string | Additional descriptive text (optional) |\n| variant | \"default\" | \"success\" | \"destructive\" | Visual style variant (default: \"default\") |\n| className | string | Additional CSS classes to apply |\n\n## Variants\n\nThe Alert component supports three different variants to convey different types of messages:\n\n### Default Alert\n\n### Success Alert\n\n### Destructive Alert\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import alert from components ui-library alert setup usage props prop type description------ ------ -------------title string the main alert message required description string additional descriptive text optional variant default success destructive visual style variant default: default classname string additional css classes to apply variants the alert component supports three different variants to convey different types of messages: default alert success alert destructive alert br br last updated: june 2025",
@@ -572,7 +642,7 @@
   {
     "slug": "/ui-components/feedback-status/badges",
     "title": "Badges",
-    "description": "Display status indicators, labels, and small pieces of information with different visual styles.",
+    "description": "Small visual markers to highlight status, labels, or counts.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Badge } from \"@/components/ui-library/Badge\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| children | React.ReactNode | The content to display inside the badge (required) |\n| variant | \"default\" | \"secondary\" | \"destructive\" | \"outline\" | \"blue\" | Visual style variant (default: \"default\") |\n| className | string | Additional CSS classes to apply |\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import badge from components ui-library badge setup usage props prop type description------ ------ -------------children react reactnode the content to display inside the badge required variant default secondary destructive outline blue visual style variant default: default classname string additional css classes to apply br br last updated: june 2025",
@@ -597,26 +667,44 @@
   },
   {
     "slug": "/ui-components/feedback-status",
-    "title": "UI Components",
-    "description": "How to build our your documents menu and navigations.",
-    "content": "",
+    "title": "Feedback & Status",
+    "description": "Visual indicators to communicate state, feedback, and contextual information to users.",
+    "content": "These components provide visual cues that inform users about the state of the interface, highlight important information, or offer contextual help. They support **usability**, **clarity**, and **user guidance** across your application.\n\n## Components Overview\n\n* [Alerts](/docs/ui-components/feedback-status/alerts)\n* [Badges](/docs/ui-components/feedback-status/badges)\n* [Tooltips](/docs/ui-components/feedback-status/tooltips)\n\n## Why Feedback & Status Components Matter\n\nGood feedback mechanisms help users:\n\n* **Understand what’s happening** – success, errors, warnings, or informational states\n* **React appropriately** – make informed decisions based on real-time context\n* **Stay oriented** – navigate the interface with greater confidence and clarity\n\nThese components are lightweight but powerful in terms of user perception and experience.\n\n## Getting Started\n\nTo include a component from this category, follow these steps:\n\n1. Navigate to the component page from the Overview above.\n2. Copy the **Full Code** block to your project.\n3. Adjust the **Props** and **Variants** to match your needs\n4. Place the component in your UI wherever real-time feedback or guidance is needed\n\nUse feedback components consistently to build trust and create a more intuitive, responsive user experience.\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "these components provide visual cues that inform users about the state of the interface highlight important information or offer contextual help they support usability clarity and user guidance across your application components overview alerts badges tooltips why feedback status components matter good feedback mechanisms help users: understand what s happening success errors warnings or informational states react appropriately make informed decisions based on real-time context stay oriented navigate the interface with greater confidence and clarity these components are lightweight but powerful in terms of user perception and experience getting started to include a component from this category follow these steps: navigate to the component page from the overview above copy the full code block to your project adjust the props and variants to match your needs place the component in your ui wherever real-time feedback or guidance is needed use feedback components consistently to build trust and create a more intuitive responsive user experience",
+      "headings": [
+        "Components Overview",
+        "Why Feedback & Status Components Matter",
+        "Getting Started"
+      ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
-        "mdx",
-        "nextjs",
-        "documents"
+        "ui components",
+        "feedback",
+        "status",
+        "next.js",
+        "tailwind css",
+        "alerts",
+        "badges",
+        "tooltips",
+        "Components Overview",
+        "Why Feedback & Status Components Matter",
+        "Getting Started",
+        "usability",
+        "clarity",
+        "user guidance",
+        "Understand what’s happening",
+        "React appropriately",
+        "Stay oriented",
+        "Full Code",
+        "Props",
+        "Variants"
       ]
     }
   },
   {
     "slug": "/ui-components/feedback-status/tooltips",
     "title": "Tooltips",
-    "description": "Display contextual information when users hover over elements.",
+    "description": "Informative hover text that appears on focus or hover of an element.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Tooltip } from \"@/components/ui-library/Tooltip\"\nimport { Button } from \"@/components/ui/button\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| children | React.ReactNode | The element that triggers the tooltip (required) |\n| content | string | The text content to display in the tooltip (required) |\n| delay | number | Delay in milliseconds before showing/hiding the tooltip (default: 200) |\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import tooltip from components ui-library tooltip import button from components ui button setup usage props prop type description------ ------ -------------children react reactnode the element that triggers the tooltip required content string the text content to display in the tooltip required delay number delay in milliseconds before showing hiding the tooltip default: 200 br br last updated: june 2025",
@@ -641,7 +729,7 @@
   {
     "slug": "/ui-components/form-controls/button",
     "title": "Button",
-    "description": "Displays a button or a component that looks like a button.",
+    "description": "A customizable button component for triggering user actions.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Button } from \"@/components/ui/button\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| variant | \"default\" | \"destructive\" | \"outline\" | \"secondary\" | \"ghost\" | \"link\" | The visual style of the button |\n| size | \"default\" | \"sm\" | \"lg\" | \"icon\" | The size of the button |\n| asChild | boolean | Whether to render as a child component using Radix UI Slot |\n| className | string | Additional CSS classes to apply |\n| disabled | boolean | Whether the button is disabled |\n\n## Variants\n\n## Sizes\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import button from components ui button setup usage props prop type description------ ------ -------------variant default destructive outline secondary ghost link the visual style of the buttonsize default sm lg icon the size of the buttonaschild boolean whether to render as a child component using radix ui slotclassname string additional css classes to applydisabled boolean whether the button is disabled variants sizes br br last updated: june 2025",
@@ -669,7 +757,7 @@
   {
     "slug": "/ui-components/form-controls/checkbox",
     "title": "Checkbox",
-    "description": "Displays a checkbox input with an integrated label and optional description.",
+    "description": "A checkbox component for toggling binary options.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { Checkbox } from \"@/components/ui-library/Checkbox\"\n\n## Setup & Usage\n\n## Props\n\n| Prop        | Type      | Description                                      |\n|-------------|-----------|--------------------------------------------------|\n| label       | string    | Label text displayed next to the checkbox         |\n| description | string    | Optional description below the label              |\n| checked     | boolean   | Optional controlled checked state                 |\n| disabled    | boolean   | Whether the checkbox is disabled                  |\n| onChange    | function  | Callback when the checked state changes           |\n| className   | string    | Optional additional class names for styling       |\n\n## Examples\n\n### Disabled State\n\n### Controlled State Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import checkbox from components ui-library checkbox setup usage props prop type description------------- ----------- --------------------------------------------------label string label text displayed next to the checkboxdescription string optional description below the labelchecked boolean optional controlled checked statedisabled boolean whether the checkbox is disabledonchange function callback when the checked state changesclassname string optional additional class names for styling examples disabled state controlled state example br br last updated: june 2025",
@@ -695,25 +783,42 @@
   {
     "slug": "/ui-components/form-controls",
     "title": "Form Controls",
-    "description": "Description of form controls.",
-    "content": "",
+    "description": "Basic interactive form components for user input.",
+    "content": "These are the foundational interactive components designed to collect user input and enable user interaction. Each component is built with accessibility, responsiveness, and reusability in mind, using **Next.js** and **Tailwind CSS**.\n\n## Components Overview\n\n* [Button](/docs/ui-components/form-controls/button)\n* [Checkbox](/docs/ui-components/form-controls/checkbox)\n* [Radio Button](/docs/ui-components/form-controls/radio-button)\n* [Select Dropdown](/docs/ui-components/form-controls/select-dropdown)\n* [Switch](/docs/ui-components/form-controls/switch-toggle)\n* [Text Input](/docs/ui-components/form-controls/text-input)\n* [Textarea](/docs/ui-components/form-controls/textarea)\n\n## Why Form Controls Matter\n\nThese components represent the **atomic building blocks** of any interactive interface. They enable:\n\n* **Data input and selection** – capturing user information in various formats\n* **Accessibility and consistency** – each component adheres to ARIA practices and design tokens\n* **Reusability** – well-documented props, usage guidelines, and examples for seamless integration\n\n## Getting Started\n\nTo include a component from this category, follow these steps:\n\n1. Navigate to the component page from the Overview above.\n2. Copy the **Full Code** block to your project.\n3. Adjust the **Props** and **Examples** as needed for your use case\n4. Integrate the component within your application, ensuring styling consistency based on your design system.\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
+      "cleanContent": "these are the foundational interactive components designed to collect user input and enable user interaction each component is built with accessibility responsiveness and reusability in mind using next js and tailwind css components overview button checkbox radio button select dropdown switch text input textarea why form controls matter these components represent the atomic building blocks of any interactive interface they enable: data input and selection capturing user information in various formats accessibility and consistency each component adheres to aria practices and design tokens reusability well-documented props usage guidelines and examples for seamless integration getting started to include a component from this category follow these steps: navigate to the component page from the overview above copy the full code block to your project adjust the props and examples as needed for your use case integrate the component within your application ensuring styling consistency based on your design system",
+      "headings": [
+        "Components Overview",
+        "Why Form Controls Matter",
+        "Getting Started"
+      ],
       "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
-        "mdx",
-        "nextjs",
-        "documents"
+        "ui components",
+        "form controls",
+        "next.js",
+        "tailwind css",
+        "documents",
+        "form",
+        "controls",
+        "Components Overview",
+        "Why Form Controls Matter",
+        "Getting Started",
+        "Next.js",
+        "Tailwind CSS",
+        "atomic building blocks",
+        "Data input and selection",
+        "Accessibility and consistency",
+        "Reusability",
+        "Full Code",
+        "Props",
+        "Examples"
       ]
     }
   },
   {
     "slug": "/ui-components/form-controls/radio-button",
     "title": "Radio Button",
-    "description": "How to build our your documents menu and navigations.",
+    "description": "A radio input for selecting a single option from a set.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { RadioButton } from \"@/components/ui-library/RadioButton\"\n\n## Setup & Usage\n\n## Props\n\n| Prop           | Type      | Description                                        |\n|----------------|-----------|---------------------------------------------------|\n| id             | string    | Unique identifier for the radio button             |\n| name           | string    | Group name for the radio button set               |\n| label          | string    | Label text displayed next to the radio button     |\n| value          | string    | Value associated with the radio button            |\n| defaultChecked | boolean   | Whether the radio button is checked by default    |\n| disabled       | boolean   | Whether the radio button is disabled              |\n| onChange       | function  | Callback when the radio button selection changes  |\n\n## Examples\n\n### Disabled State\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import radiobutton from components ui-library radiobutton setup usage props prop type description---------------- ----------- ---------------------------------------------------id string unique identifier for the radio buttonname string group name for the radio button setlabel string label text displayed next to the radio buttonvalue string value associated with the radio buttondefaultchecked boolean whether the radio button is checked by defaultdisabled boolean whether the radio button is disabledonchange function callback when the radio button selection changes examples disabled state",
@@ -738,7 +843,7 @@
   {
     "slug": "/ui-components/form-controls/select-dropdown",
     "title": "Select Dropdown",
-    "description": "Displays a list of options for the user to pick from, triggered by a button.",
+    "description": "A dropdown component for selecting one value from a list.",
     "content": "import { SelectDropdown } from \"@/components/ui-library/SelectDropdown\"\nimport { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| placeholder | string | Text shown when no option is selected |\n| groups | `Array<{ groupLabel: string, options: Array<{ label: string, value: string }> }>` | Array of option groups to display in the dropdown |\n| value | string | Controlled value of the selected option |\n| onChange | function | Callback when an option is selected |\n| className | string | Additional CSS classes to apply |\n\n## Examples\n\n### Multiple Groups Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import selectdropdown from components ui-library selectdropdown import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------placeholder string text shown when no option is selectedgroups array grouplabel: string options: array label: string value: string array of option groups to display in the dropdownvalue string controlled value of the selected optiononchange function callback when an option is selectedclassname string additional css classes to apply examples multiple groups example br br last updated: june 2025",
@@ -766,7 +871,7 @@
   {
     "slug": "/ui-components/form-controls/switch-toggle",
     "title": "Switch",
-    "description": "A toggle switch component that allows users to turn an option on or off.",
+    "description": "A toggle switch for enabling or disabling options.",
     "content": "import { SwitchToggle } from \"@/components/ui-library/SwitchToggle\"\nimport { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop        | Type      | Description                                      |\n|-------------|-----------|--------------------------------------------------|\n| label       | string    | Optional label text displayed next to the switch  |\n| description | string    | Optional description below the label              |\n| checked     | boolean   | Optional controlled checked state                 |\n| disabled    | boolean   | Whether the switch is disabled                    |\n| onChange    | function  | Callback when the checked state changes           |\n| className   | string    | Optional additional class names for styling       |\n\n## Examples\n\n### Disabled State\n\n### Controlled State Example\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import switchtoggle from components ui-library switchtoggle import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------------- ----------- --------------------------------------------------label string optional label text displayed next to the switchdescription string optional description below the labelchecked boolean optional controlled checked statedisabled boolean whether the switch is disabledonchange function callback when the checked state changesclassname string optional additional class names for styling examples disabled state controlled state example br br last updated: june 2025",
@@ -793,7 +898,7 @@
   {
     "slug": "/ui-components/form-controls/text-input",
     "title": "Text Inputs",
-    "description": "Displays a form input field or a component that looks like an input field.",
+    "description": "A single-line text input field for user data entry.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the input field |\n| label | string | Label text displayed above the input |\n| placeholder | string | Placeholder text shown when input is empty |\n| value | string | Controlled input value |\n| onChange | function | Callback function when input value changes |\n| disabled | boolean | Whether the input is disabled |\n| type | string | The input type (e.g., \"text\", \"password\", \"email\"). Default is \"text\". |\n\n## Examples\n\n### Disabled State\n\n### Password Field\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs setup usage props prop type description------ ------ -------------id string unique identifier for the input fieldlabel string label text displayed above the inputplaceholder string placeholder text shown when input is emptyvalue string controlled input valueonchange function callback function when input value changesdisabled boolean whether the input is disabledtype string the input type e g text password email default is text examples disabled state password field br br last updated: june 2025",
@@ -819,7 +924,7 @@
   {
     "slug": "/ui-components/form-controls/textarea",
     "title": "TextArea",
-    "description": "A multi-line text input field.",
+    "description": "A multi-line input field for longer text entries.",
     "content": "import { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\nimport { TextArea } from \"@/components/ui-library/TextArea\"\n\n## Setup & Usage\n\n## Props\n\n| Prop | Type | Description |\n|------|------|-------------|\n| id | string | Unique identifier for the textarea |\n| label | string | Label text displayed above the textarea |\n| placeholder | string | Placeholder text shown when textarea is empty |\n| value | string | Controlled textarea value |\n| onChange | function | Callback function when textarea value changes |\n| disabled | boolean | Whether the textarea is disabled |\n| rows | number | Number of visible text lines (default: 4) |\n| className | string | Additional CSS classes to apply |\n\n## Examples\n\n### Disabled State\n\n<br />\n\n<br />\n\n*Last updated: June 2025*\n",
     "_searchMeta": {
       "cleanContent": "import tabs tabslist tabstrigger tabscontent from components ui tabs import textarea from components ui-library textarea setup usage props prop type description------ ------ -------------id string unique identifier for the textarealabel string label text displayed above the textareaplaceholder string placeholder text shown when textarea is emptyvalue string controlled textarea valueonchange function callback function when textarea value changesdisabled boolean whether the textarea is disabledrows number number of visible text lines default: 4 classname string additional css classes to apply examples disabled state br br last updated: june 2025",
